@@ -1,7 +1,7 @@
 ﻿function LaunchURL(strEnvironment)
 {
   try{
-  let browser = "Chrome"
+  let browser = Project.Variables.browser
   if (Sys.WaitBrowser(browser).Exists)       
     {
       Sys.Browser(browser).Close()
@@ -15,7 +15,7 @@
       URL = "https://qa.cmicpaas.com/cmiclaunch/cmiclaunch_R12.html";
       break;
   }
-  Browsers.Item("Chrome").Run(URL)
+  Browsers.Item(browser).Run(URL)
   }
   catch(err)
   {
@@ -54,6 +54,53 @@ function Login(strEnvironment)
 
 function CloseBrowser(URL)
 {
-  Sys.Browser("chrome").Close()
+  Sys.Browser(Project.Variables.browser).Close()
 }
 
+//#########################################################################################################################################################*/
+function getPage()
+   {
+     return Sys.Browser(Project.Variables.browser).Page("*")  
+   } 
+
+//#########################################################################################################################################################*/
+function WaitObjLoad(objUI)
+{
+  var iCount = 0;
+  var objCurrentPage;
+  Log.Enabled = false;
+  objCurrentPage = getPage()
+  if(!objCurrentPage.Exists)
+  {
+    objCurrentPage = getPage()
+    objCurrentPage.Wait()
+  }
+  while(iCount<40)
+  {
+    if(objUI.Exists == false || objUI.Enabled == false)
+    {
+      Delay(500,"Waiting for Object to Load");
+      iCount = iCount+1;
+      objCurrentPage = getPage()
+      if(!objCurrentPage.Exists)
+      {
+        objCurrentPage.Wait()
+      }
+    }
+    else
+      break;
+  }
+  Log.Enabled = true;
+}
+/*#######################################################################################################################################################*/
+
+function EventControl1_OnStopTest(Sender)
+{
+    var folderPath = aqFileSystem.ExcludeTrailingBackSlash(ProjectSuite.Path)
+    folderPath =  aqFileSystem.GetFileFolder(folderPath)
+    var filePath = folderPath + "TestData\\ExecutionStatus.ini";
+    var file = Sys.OleObject("Scripting.FileSystemObject").OpenTextFile(filePath, 2); // 1 for reading
+    file.WriteLine("isCompleted" + "=" + "True");
+    file.Close()
+    Log.Message("Execution Completed")
+}

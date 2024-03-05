@@ -137,6 +137,7 @@ All-Webservices\pm-rest-api.xml
 All-Webservices\po-rest-api.xml
 All-Webservices\prm-rest-api.xml
 All-Webservices\sys-rest-api.xml
+PreRequisite\SelectProjectFromUI.xml
 TS_Annotation\TC_A01_Annotation.xml
 TS_Subcontracts\TC_SC01_PM_SC_Headers.xml
 TS_Subcontracts\TC_SC02_PM_SC_Schedules.xml
@@ -191,7 +192,6 @@ TS_Contacts\TC_C03_CPM_Project-Partners.xml
 TS_Contacts\TC_C04_CPM_Regions.xml
 TS_Contacts\TC_C05_CPM_Inactive-Contacts.xml
 TS_Contacts\TC_C06_AddressCodeLOV.xml
-TS_Contacts\TC_C06_AddressCodeLOV1.xml
 TS_Contacts\TC_C07_TEST_PM_Project-Contacts.xml
 TS_Negative-Scenarios\TC_PM_PunchList-Status-Negative-Tests.xml
 TS_Negative-Scenarios\TC_TEST_PM_RFI_Status_NegativeCases.xml

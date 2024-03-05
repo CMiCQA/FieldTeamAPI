@@ -43,10 +43,12 @@
         </con:representation>
         <con:request name="Request 1" id="d1bb6c6d-0079-462b-b0df-c7fec6a698b2" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -64,8 +66,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Update Specific" id="e0d0d1b1-aa54-462a-bc25-18ad6b564c0d" method="PATCH">
         <con:settings/>
@@ -99,10 +109,12 @@
         </con:representation>
         <con:request name="Request 1" id="f00cf58d-fa03-422f-999f-5c49f37324e9" mediaType="application/vnd.oracle.adf.resourceitem+json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -120,8 +132,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Delete Specific" id="e8cd276b-0c86-4a3d-bd97-0f17b1fc18fa" method="DELETE">
         <con:settings/>
@@ -155,10 +175,12 @@
         </con:representation>
         <con:request name="Request 1" id="97655ab6-d403-45ac-bf4e-2612bb945ccc" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -176,9 +198,22 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:resource>
     <con:method name="Retrieve Job Batches" id="4dc89dd7-47c5-4b70-a562-59e6e4000954" method="GET">
       <con:settings/>
@@ -226,10 +261,12 @@
       </con:representation>
       <con:request name="Request 1" id="dcb8c8e8-e25a-417a-b3a0-7b6c5867eb8c" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -247,8 +284,16 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
     <con:method name="Create Batch" id="7c12ce98-a986-4136-babf-da206d5f4df3" method="POST">
       <con:settings/>
@@ -289,10 +334,12 @@
       </con:representation>
       <con:request name="Request 1" id="27594cc6-92a6-4cf8-baf8-3a1aceb7f106" mediaType="application/vnd.oracle.adf.resourceitem+json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -310,9 +357,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jccontforecastarch" path="jccontforecastarch" id="80739eb9-87ea-4c41-8ef3-eb9a995733bf">
     <con:settings/>
@@ -336,10 +396,12 @@
       </con:representation>
       <con:request name="Request 1" id="6977e018-7db0-49a7-a823-9d85a0cbd96e" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -357,9 +419,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jccontforecaststaff" path="jccontforecaststaff" id="761afa89-6cb8-4815-86d0-b2a233a98130">
     <con:settings/>
@@ -397,10 +472,12 @@
       </con:representation>
       <con:request name="Request 1" id="3199363f-bed2-4475-bffd-33bd7c28b5fd" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -418,9 +495,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jccontforecaststaffdet" path="jccontforecaststaffdet" id="6126dbbd-ffb2-4d1f-8259-7f79b31fdc9a">
     <con:settings/>
@@ -444,10 +534,12 @@
       </con:representation>
       <con:request name="Request 1" id="8fab2eb6-32a7-418a-a5f1-43b65101bfdc" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -465,9 +557,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jccostcompletedetail" path="jccostcompletedetail" id="30e51cbc-4a51-4d67-a7c7-ceac1d7ac9d3">
     <con:settings/>
@@ -501,10 +606,12 @@
         </con:representation>
         <con:request name="Request 1" id="53fef4e4-fca1-44fa-b2ef-ddab0e4c29b7" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -522,8 +629,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Update Specific" id="012aeb98-856e-4c9a-8838-1791d7830ea2" method="PATCH">
         <con:settings/>
@@ -557,10 +672,12 @@
         </con:representation>
         <con:request name="Request 1" id="b8515bf0-3e75-4e29-af7d-ab8b2fe7beb8" mediaType="application/vnd.oracle.adf.resourceitem+json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -578,8 +695,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Delete Specific" id="568e7cb3-cb0e-4bb8-ae3d-042d201bf789" method="DELETE">
         <con:settings/>
@@ -606,10 +731,12 @@
         </con:representation>
         <con:request name="Request 1" id="392ff08e-55a4-4c5c-bbcd-dfbdc7ae0625" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -627,9 +754,22 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:resource>
     <con:method name="Retrieve Details" id="ef2fd909-6e16-417f-b308-b0d0d1771db5" method="GET">
       <con:settings/>
@@ -650,10 +790,12 @@
       </con:representation>
       <con:request name="Request 1" id="2f9966bc-d306-431f-97f4-301a3719f5af" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -671,8 +813,16 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
     <con:method name="Create Detail (ORASEQ)" id="c6f79614-e562-428c-af34-1cd3268fccd2" method="POST">
       <con:settings/>
@@ -699,10 +849,12 @@
       </con:representation>
       <con:request name="Request 1" id="3d13458c-e7cb-4eb6-8e76-76dec3c13cf4" mediaType="application/vnd.oracle.adf.resourceitem+json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -720,9 +872,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jccosttocompletespread (view not updated)" path="jccosttocompletespread" id="53c09e21-147c-4fe5-81a8-9c2c059891d2">
     <con:settings/>
@@ -749,10 +914,12 @@
         </con:representation>
         <con:request name="Request 1" id="761db6a8-eaf7-46bc-90fd-def77562a0b3" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -770,8 +937,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Update Specific" id="e87e873f-4134-453d-ac16-08f085b45619" method="PATCH">
         <con:settings/>
@@ -798,10 +973,12 @@
         </con:representation>
         <con:request name="Request 1" id="8586813d-87aa-4611-a088-516266242235" mediaType="application/vnd.oracle.adf.resourceitem+json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -819,18 +996,28 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Delete Specific" id="1d93c845-aac2-46a0-a212-9fbe4e80ce62" method="DELETE">
         <con:settings/>
         <con:parameters/>
         <con:request name="Request 1" id="a1da2088-6638-4881-8064-f1ed6f2a8e8d" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -848,9 +1035,22 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:resource>
     <con:method name="Retrieve Spread Costs" id="c495cd24-2480-4bb1-802c-f691f928c221" method="GET">
       <con:settings/>
@@ -864,10 +1064,12 @@
       </con:representation>
       <con:request name="Request 1" id="3ce48e2a-a8b8-4809-9fce-09924d463f2c" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -885,18 +1087,28 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
     <con:method name="Create Detail" id="842497dc-3b5c-42bc-8d87-8ef97ad603be" method="POST">
       <con:settings/>
       <con:parameters/>
       <con:request name="Request 1" id="a1da6607-d64d-4fb1-a658-89fc8b08b80d" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -914,9 +1126,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jcdetailposted" path="jcdetailposted" id="ac835e14-1cfc-460b-a974-32d285e1ea47">
     <con:settings/>
@@ -957,10 +1182,12 @@
         </con:representation>
         <con:request name="Request 1" id="a6267771-fde6-43ee-9153-f989b2883888" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -978,8 +1205,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Update Specific" id="25ed5644-757a-4849-a87e-3b0073d96ac2" method="PATCH">
         <con:settings/>
@@ -1020,10 +1255,12 @@
         </con:representation>
         <con:request name="Request 1" id="5a39e6ca-efa1-4a6f-a556-e7533861e836" mediaType="application/vnd.oracle.adf.resourceitem+json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1041,8 +1278,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Delete Specific" id="a94f2cf7-2647-4e89-a998-3b9ef975ba35" method="DELETE">
         <con:settings/>
@@ -1083,10 +1328,12 @@
         </con:representation>
         <con:request name="Request 1" id="2d1c6b48-ff8a-4882-ad92-319de5efde64" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1104,9 +1351,22 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:resource>
     <con:method name="Retrieve Details Posted" id="7a58367d-7adc-41fd-8bd1-7d8ca0693b57" method="GET">
       <con:settings/>
@@ -1141,10 +1401,12 @@
       </con:representation>
       <con:request name="Request 1" id="b3880584-c3e3-4a82-96c7-4ca8d1eca928" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1162,8 +1424,16 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
     <con:method name="Create Detail Posted" id="d0d52d35-58c9-4ec7-8d59-aca6dd8d3674" method="POST">
       <con:settings/>
@@ -1197,10 +1467,12 @@
       </con:representation>
       <con:request name="Request 1" id="3c018dd5-c155-4f5f-833d-58099b40a8aa" mediaType="application/vnd.oracle.adf.resourceitem+json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1218,9 +1490,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jcforeignbatchdatafile (NO DATA)" path="jcforeignbatchdatafile" id="0da4a552-f2ba-4e7a-9c61-770213300901">
     <con:settings/>
@@ -1244,10 +1529,12 @@
       </con:representation>
       <con:request name="Request 1" id="8eea23af-5c0e-4775-be5a-f438c10a9380" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1265,8 +1552,16 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
     <con:method name="Create Data" id="0deead01-5f7b-4ff6-9d5a-47218a013a53" method="POST">
       <con:settings/>
@@ -1293,10 +1588,12 @@
       </con:representation>
       <con:request name="Request 1" id="add5366d-bc18-4202-8a67-d7af16744f43" mediaType="application/vnd.oracle.adf.resourceitem+json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1314,9 +1611,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jcjob" path="jcjob" id="4eaa378c-ad03-4372-a229-bb2a4e885a79">
     <con:settings/>
@@ -1357,10 +1667,12 @@
         </con:representation>
         <con:request name="Request 1" id="7494f451-56d6-4963-8e15-3a73a2b5c55f" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1378,8 +1690,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Update Specific" id="ae0d87e6-03e6-4219-8fe0-b58b405caee5" method="PATCH">
         <con:settings/>
@@ -1406,10 +1726,12 @@
         </con:representation>
         <con:request name="Request 1" id="4259266e-acd3-411d-bb27-597011fc8555" mediaType="application/vnd.oracle.adf.resourceitem+json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1427,8 +1749,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Delete Specific (not working)" id="622004df-ddce-4a40-b553-f95bb548c930" method="DELETE">
         <con:settings/>
@@ -1469,10 +1799,12 @@
         </con:representation>
         <con:request name="Request 1" id="02a51f01-aa96-4fd1-acb6-bc5cb495f686" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1490,9 +1822,22 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:resource>
     <con:method name="Retrieve Jobs" id="19b59052-a351-4ef6-b865-0a23366c3594" method="GET">
       <con:settings/>
@@ -1520,10 +1865,12 @@
       </con:representation>
       <con:request name="Request 1" id="aa32048c-c86f-475b-9423-b7cf4beb2e3c" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1541,8 +1888,16 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
     <con:method name="Create Job" id="333558ac-3e17-424e-bdf8-76f7a561c12e" method="POST">
       <con:settings/>
@@ -1576,10 +1931,12 @@
       </con:representation>
       <con:request name="Request 1" id="4cbba9a3-973f-4f39-b622-1f0eed6f117e" mediaType="application/vnd.oracle.adf.resourceitem+json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1597,9 +1954,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jcjobcategory" path="jcjobcategory" id="4419deb2-a912-4479-b0b1-cddd06a6cc64">
     <con:settings/>
@@ -1633,10 +2003,12 @@
         </con:representation>
         <con:request name="Request 1" id="b7cc8af7-65fb-4efc-b270-e508ad0f82a2" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1654,8 +2026,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Delete Specific" id="08d34716-2e02-4a78-928b-93346b3a2679" method="DELETE">
         <con:settings/>
@@ -1689,10 +2069,12 @@
         </con:representation>
         <con:request name="Request 1" id="43ea2559-27ca-474a-b770-899ecb4bf982" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1710,8 +2092,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Update Specific" id="feb57d4d-9729-4659-a901-75f319f29600" method="PATCH">
         <con:settings/>
@@ -1752,10 +2142,12 @@
         </con:representation>
         <con:request name="Request 1" id="cbb37971-8087-476e-8a2b-4fca1f424c01" mediaType="application/vnd.oracle.adf.resourceitem+json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1773,9 +2165,22 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:resource>
     <con:method name="Retrieve Job Categories" id="ba863310-7467-46f0-8d4f-ecb257f2ee99" method="GET">
       <con:settings/>
@@ -1803,10 +2208,12 @@
       </con:representation>
       <con:request name="Request 1" id="2c082412-ccd4-4acc-aa44-b43e5a9751f6" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1824,8 +2231,16 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
     <con:method name="Create Category" id="120d727b-7258-4c0e-ac9f-6e8a5a45b7f3" method="POST">
       <con:settings/>
@@ -1859,10 +2274,12 @@
       </con:representation>
       <con:request name="Request 1" id="0b6c0f30-c5d1-4119-bcaa-bdbb6aabfa3f" mediaType="application/vnd.oracle.adf.resourceitem+json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1880,9 +2297,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jcjobcombinedjobrel" path="jcjobcombinedjobrel" id="29edb942-f46d-4bf4-ab15-f1c89fd2c6ba">
     <con:settings/>
@@ -1913,10 +2343,12 @@
       </con:representation>
       <con:request name="Request 1" id="5bd09e75-49fe-478f-9662-60d448769437" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1934,9 +2366,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jcjobcostcatcodes" path="jcjobcostcatcodes" id="3eee797f-8dfe-486e-bfe2-f8dc64ee3498">
     <con:settings/>
@@ -1960,10 +2405,12 @@
       </con:representation>
       <con:request name="Request 1" id="9f08e33e-843a-4359-88e0-f6671ae2d886" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -1981,9 +2428,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jcjobcostcodes" path="jcjobcostcodes" id="04cf16b0-80ae-4ab6-bd2e-beadf589cf5d">
     <con:settings/>
@@ -2021,10 +2481,12 @@
       </con:representation>
       <con:request name="Request 1" id="c6838d35-c8ca-49fb-a2ef-690edcfb9502" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2042,8 +2504,16 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
     <con:method name="Create Phase (ORASEQ)" id="ef16f825-10ad-43a6-ab2c-b2d1f3f9dc74" method="POST">
       <con:settings/>
@@ -2070,10 +2540,12 @@
       </con:representation>
       <con:request name="Request 1" id="f29ea422-613f-4742-bbd8-cb4e501f7c34" mediaType="application/vnd.oracle.adf.resourceitem+json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2091,9 +2563,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jcmastercategories" path="jcmastercategories" id="41c16e89-3417-4075-aeb4-d60a7c9de1ad">
     <con:settings/>
@@ -2117,10 +2602,12 @@
       </con:representation>
       <con:request name="Request 1" id="1f4f1a67-e053-4e12-b128-b744231c13f4" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2138,9 +2625,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jcmastercostcodes" path="jcmastercostcodes" id="c2434e71-0e60-4721-8afe-8b002e083e39">
     <con:settings/>
@@ -2174,10 +2674,12 @@
         </con:representation>
         <con:request name="Request 1" id="27dfe837-b5ee-4269-9e49-448b75810f77" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2195,8 +2697,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Update Specific" id="863948b4-00f0-48d5-bcee-e704f6cff1d7" method="PATCH">
         <con:settings/>
@@ -2243,10 +2753,12 @@
         </con:representation>
         <con:request name="Request 1" id="9af86cf5-689a-4e44-9295-97479ec906ba" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2264,9 +2776,22 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:resource>
     <con:method name="Retrieve Master Phases" id="f5773ad7-5d66-4ec7-b472-233c20fa3f25" method="GET">
       <con:settings/>
@@ -2287,10 +2812,12 @@
       </con:representation>
       <con:request name="Request 1" id="362aa3f6-e78f-474e-a61e-07eff6bfa9b4" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2308,8 +2835,16 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
     <con:method name="Create Phase" id="192e03f1-5ec0-43f6-8aa1-83d9cc32b977" method="POST">
       <con:settings/>
@@ -2350,10 +2885,12 @@
       </con:representation>
       <con:request name="Request 1" id="5a9ef3aa-1a8c-4584-b0b3-eb3b9055107e" mediaType="application/vnd.oracle.adf.resourceitem+json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2371,9 +2908,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jctran" path="jctran" id="43bee8b4-7fe1-4b85-8e1d-f8f2deed999f">
     <con:settings/>
@@ -2420,10 +2970,12 @@
         </con:representation>
         <con:request name="Request 1" id="5c1ba0e5-ac3e-49b1-a796-dc029b1f9011" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2441,8 +2993,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Update Specific" id="3ddc768a-5449-4b80-a9a4-e387c12088d4" method="PATCH">
         <con:settings/>
@@ -2469,10 +3029,12 @@
         </con:representation>
         <con:request name="Request 1" id="eaf27bc5-4a4f-49b4-9096-5ea1d4f2e345" mediaType="application/vnd.oracle.adf.resourceitem+json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2490,8 +3052,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Delete Specific" id="dc04ec61-3733-4074-9448-e07dd51f4779" method="DELETE">
         <con:settings/>
@@ -2518,10 +3088,12 @@
         </con:representation>
         <con:request name="Request 1" id="6472a313-e60e-4999-8063-d909dc2e399b" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2539,9 +3111,22 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:resource>
     <con:method name="Retrieve Transactions" id="c1cadade-d6a2-4850-a021-b44407a22be2" method="GET">
       <con:settings/>
@@ -2562,10 +3147,12 @@
       </con:representation>
       <con:request name="Request 1" id="0d088504-4e7f-401b-900e-c3342a309afd" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2583,8 +3170,16 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
     <con:method name="Create Transaction" id="be8434ea-2e65-48ba-8d22-fc3d5d495b25" method="POST">
       <con:settings/>
@@ -2618,10 +3213,12 @@
       </con:representation>
       <con:request name="Request 1" id="0f88f94c-616c-4397-a9ff-1ba0bd254823" mediaType="application/vnd.oracle.adf.resourceitem+json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2639,9 +3236,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jcutran" path="jcutran" id="06bd743b-2bb8-4174-aeeb-67e356ac1610">
     <con:settings/>
@@ -2675,10 +3285,12 @@
         </con:representation>
         <con:request name="Request 1" id="54c42271-6dc3-404e-b91b-36af8a1ee4d3" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2696,8 +3308,16 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
       <con:method name="Update Specific" id="4126e750-e8d4-4e23-90c3-ac2eaf39510e" method="PATCH">
         <con:settings/>
@@ -2765,10 +3385,12 @@
         </con:representation>
         <con:request name="Request 1" id="f8619e29-c6ff-4706-9be7-34e4aea9ea0d" mediaType="application/json">
           <con:settings/>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2786,9 +3408,22 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:request>
+        <con:environmentSpec>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:method>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:resource>
     <con:method name="Retrieve Unit Transactions" id="02a95e8c-a74a-4063-9812-db686461306c" method="GET">
       <con:settings/>
@@ -2816,10 +3451,12 @@
       </con:representation>
       <con:request name="Request 1" id="5eca0991-db63-4ffe-8762-589a376327c0" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2837,8 +3474,16 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
     <con:method name="Create Unit Transaction" id="10462e0c-0643-43f3-87ef-953bbebd00d4" method="POST">
       <con:settings/>
@@ -2872,10 +3517,12 @@
       </con:representation>
       <con:request name="Request 1" id="4bbf9b81-3fbc-40fb-9810-499368689770" mediaType="application/vnd.oracle.adf.resourceitem+json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2893,9 +3540,22 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
   <con:resource name="jcwiprep (NO DATA EXISTS ATM)" path="jcwiprep" id="607a3ad7-d0fe-4030-a8ea-f77598aaf7fc">
     <con:settings/>
@@ -2926,10 +3586,12 @@
       </con:representation>
       <con:request name="Request 1" id="32db5b67-dc51-4649-a695-b697a256dc2b" mediaType="application/json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2947,8 +3609,16 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
     <con:method name="POST WIP Report (no attributes set?)" id="8086b187-73d7-4b5d-8f59-b104851b3ab5" method="POST">
       <con:settings/>
@@ -2975,10 +3645,12 @@
       </con:representation>
       <con:request name="Request 1" id="9c32f858-a12d-4b8f-9d76-20ff61d82f52" mediaType="application/vnd.oracle.adf.resourceitem+json">
         <con:settings/>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="e6982624-acb8-444c-873d-074f9555a666">
@@ -2996,8 +3668,26 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:resource>
+  <con:environmentSpec>
+    <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:resource>

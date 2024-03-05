@@ -9,7 +9,7 @@
       <timeout>600</timeout>
       <executionResult>0</executionResult>
       <resultDescription/>
-      <testRunner>TestComplete 15</testRunner>
+      <testRunner>TestExecute 15</testRunner>
       <runMode>UNIT</runMode>
       <exportTestLog/>
       <silentModeLog>C:\Users\Administrator\Documents\CMIC_TESTCOMPLETE_PROJECT\CMiC_FieldTeam\CMiC_FieldTeam.pjs</silentModeLog>
@@ -27,4 +27,11 @@
   </con:testStep>
   <con:properties/>
   <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+  <con:tagId>0e89e3c8-dfa3-44dc-b39b-3d35ac598e1a</con:tagId>
+  <con:tagId>c4a9b3b0-fe4d-44b8-a1cd-e873e92e452a</con:tagId>
 </con:testCase>

@@ -10,16 +10,14 @@ function DeletePCI()
     StrEnv = Project.Variables.Environment[0].toUpperCase() + Project.Variables.Environment.slice(1).toLowerCase()
     ObjEnvironmentPanel.FindChildByXPath("//a[text()='"+StrEnv+"']").Click()
     Aliases.Browser.PgeCmicR12LaunchPage.BtnLaunchSoftware.Click()
-    Delay(3000, "Wait for page to load")
+    getPage().Wait()
 //------------------------------------------------------------------  
     CommonFunctions.Login(Project.Variables.Environment)
 //------------------------------------------------------------------ 
-  Delay(3000, "Wait for page to load")
   if (Aliases.Browser.PgeProjectManagement.frameTreeframe.LnkPCI.VisibleOnScreen == false){
       Aliases.Browser.PgeProjectManagement.frameTreeframe.LblBudgetAndCostManagement.Click()
       }
     Aliases.Browser.PgeProjectManagement.frameTreeframe.LnkPCI.Click()
-    Delay(3000, "Wait for page to load")
 //-----------------------------------------------------------------
     var folderPath = aqFileSystem.ExcludeTrailingBackSlash(ProjectSuite.Path)
     folderPath =  aqFileSystem.GetFileFolder(folderPath)
@@ -30,14 +28,15 @@ function DeletePCI()
 //-----------------------------------------------------------------
     Aliases.Browser.PgeProjectManagement.frameContentframe.TxtBoxSeachSC.SetText(PCICode)
     Sys.Keys("[Enter]")
-    Delay(3000, "Wait for page to load")
     objTblSearchResultsSC = Aliases.Browser.PgeProjectManagement.frameContentframe.TblSearchResultsSC
+    WaitObjLoad(objTblSearchResultsSC)
     objContractCode = objTblSearchResultsSC.FindChildByXPath("//td[contains(text(),'"+PCICode+"')]")
     objContractCode.Click()
 //-----------------------------------------------------------------
     Aliases.Browser.PgeProjectManagement.frameHeaderframe.BtnDeleteAll.Click()
     Aliases.Browser.PgeProjectManagement.frameContentframe.BtnYes.Click()
 //-----------------------------------------------------------------
+    Log.Message("Deleted the record" + PCICode)
     CommonFunctions.CloseBrowser()
   }
 //-----------------------------------------------------------------

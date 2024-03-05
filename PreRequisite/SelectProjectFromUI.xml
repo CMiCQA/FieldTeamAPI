@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="0227e8f0-a4a1-44f5-b224-c6f16eab798d" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SelectProjectFromUI" searchProperties="true" timeout="0">
+  <con:settings id="f2503636-97f4-4882-8a56-9223bf08e83a">
+    <con:setting id="0227e8f0-a4a1-44f5-b224-c6f16eab798dfileName">SelectProjectFromUI</con:setting>
+  </con:settings>
+  <con:testStep type="properties" name="Properties" id="b680c358-30c4-4527-ba91-2eb06caefaeb">
+    <con:settings/>
+    <con:config xsi:type="con:PropertiesStep" saveFirst="true">
+      <con:properties>
+        <con:property>
+          <con:name>ProjectName</con:name>
+          <con:value>RJPROJ01</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="Data Sink" id="33a7c3b7-e0e1-46fb-b5b7-74576c2253d7">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep">
+      <con:dataSink type="File">
+        <con:configuration>
+          <fileName>${projectDir}/FieldTeamAPI/TestData/ProjectDetails.txt</fileName>
+          <separator>,</separator>
+          <escape>"</escape>
+          <quote>true</quote>
+          <trim>true</trim>
+          <append>false</append>
+          <encoding>Cp1252</encoding>
+        </con:configuration>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>ProjectName</con:name>
+          <con:value>${Properties#ProjectName}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="tcintegrationteststep" name="SelectProjectFromUI" id="c11dce29-7488-4992-a0d6-6a6a9b5ac0aa">
+    <con:settings/>
+    <con:config>
+      <timeout/>
+      <executionResult>0</executionResult>
+      <resultDescription/>
+      <testRunner>TestExecute 15</testRunner>
+      <runMode>UNIT</runMode>
+      <exportTestLog/>
+      <silentModeLog/>
+      <projectSuiteFile>${projectDir}/FieldTeamAPI/TestCompleteUIscriptsForDeleteData/CMiC_API_Testing.pjs</projectSuiteFile>
+      <projectName>FieldTeam</projectName>
+      <scriptUnit>ChooseProject</scriptUnit>
+      <scriptRoutine>ChooseProject</scriptRoutine>
+      <silentMode>false</silentMode>
+      <showTestLog>false</showTestLog>
+      <warningAsError>false</warningAsError>
+      <test/>
+      <otherTest/>
+      <otherArgs/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="delay" name="Delay" id="7786c34d-35ce-4aa8-9614-327670a2d63d">
+    <con:settings/>
+    <con:config>
+      <delay>60000</delay>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:tagId>c4a9b3b0-fe4d-44b8-a1cd-e873e92e452a</con:tagId>
+</con:testCase>

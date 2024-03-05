@@ -1,7 +1,7 @@
 ﻿function LaunchURL(strEnvironment)
 {
   try{
-  let browser = "Chrome"
+  let browser = Project.Variables.browser
   if (Sys.WaitBrowser(browser).Exists)       
     {
       Sys.Browser(browser).Close()
@@ -54,6 +54,44 @@ function Login(strEnvironment)
 
 function CloseBrowser(URL)
 {
-  Sys.Browser("chrome").Close()
+  Sys.Browser(Project.Variables.browser).Close()
 }
+
+//#########################################################################################################################################################*/
+function getPage()
+   {
+     return Sys.Browser(Project.Variables.browser).Page("*")  
+   } 
+
+//#########################################################################################################################################################*/
+function WaitObjLoad(objUI)
+{
+  var iCount = 0;
+  var objCurrentPage;
+  Log.Enabled = false;
+  objCurrentPage = getPage()
+  if(!objCurrentPage.Exists)
+  {
+    objCurrentPage = getPage()
+    objCurrentPage.Wait()
+  }
+  while(iCount<40)
+  {
+    if(objUI.Exists == false || objUI.Enabled == false)
+    {
+      Delay(500,"Waiting for Object to Load");
+      iCount = iCount+1;
+      objCurrentPage = getPage()
+      if(!objCurrentPage.Exists)
+      {
+        objCurrentPage.Wait()
+      }
+    }
+    else
+      break;
+  }
+  Log.Enabled = true;
+}
+/*#######################################################################################################################################################*/
+
 

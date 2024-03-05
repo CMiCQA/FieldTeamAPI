@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="8b059605-39cf-4f94-97b0-8f55bc303178" name="PreRequisite">
+  <con:settings id="0431304f-8472-4dc4-aadb-cfb21106c338">
+    <con:setting id="8b059605-39cf-4f94-97b0-8f55bc303178fileName">PreRequisite</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

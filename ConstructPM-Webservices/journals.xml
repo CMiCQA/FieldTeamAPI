@@ -70,10 +70,12 @@
         <con:request name="Request 1" id="e84e5258-c456-46a7-a6f3-b12d0867ae23" mediaType="application/json">
           <con:settings/>
           <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -90,6 +92,9 @@
             </con:entry>
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>TESTRAIL</con:authProfile>
             </con:entry>
           </con:environmentSpec>
         </con:request>
@@ -109,6 +114,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:method>
       <con:environmentSpec>
@@ -125,6 +133,9 @@
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
         <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
       </con:environmentSpec>
@@ -199,10 +210,12 @@
         <con:request name="Request 1" id="6227d18d-af73-4550-9cbb-f707477fa367" mediaType="application/json">
           <con:settings/>
           <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -219,6 +232,9 @@
             </con:entry>
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>TESTRAIL</con:authProfile>
             </con:entry>
           </con:environmentSpec>
         </con:request>
@@ -238,6 +254,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:method>
       <con:environmentSpec>
@@ -254,6 +273,9 @@
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
         <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
       </con:environmentSpec>
@@ -325,10 +347,12 @@
           <con:request name="Request 1" id="c7017bb3-0b4a-492f-8932-d9923e5804ce" mediaType="application/json">
             <con:settings/>
             <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+            <con:request/>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters/>
             <con:environmentSpec>
               <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -346,6 +370,9 @@
               <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
                 <con:authProfile>QALATEST</con:authProfile>
               </con:entry>
+              <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+                <con:authProfile>TESTRAIL</con:authProfile>
+              </con:entry>
             </con:environmentSpec>
           </con:request>
           <con:environmentSpec>
@@ -362,6 +389,9 @@
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
           </con:environmentSpec>
@@ -406,10 +436,12 @@
           <con:request name="Request 1" id="8283e20f-18c5-4c30-a334-d8726b02494c" mediaType="application/json">
             <con:settings/>
             <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+            <con:request/>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters/>
             <con:environmentSpec>
               <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -426,6 +458,9 @@
               </con:entry>
               <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
                 <con:authProfile>QALATEST</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+                <con:authProfile>TESTRAIL</con:authProfile>
               </con:entry>
             </con:environmentSpec>
           </con:request>
@@ -445,6 +480,9 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:method>
         <con:environmentSpec>
@@ -461,6 +499,9 @@
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
         </con:environmentSpec>
@@ -519,10 +560,12 @@
         <con:request name="Request 1" id="8cc7ba6d-1523-47b5-8134-ce978da9883a" mediaType="application/json">
           <con:settings/>
           <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -539,6 +582,9 @@
             </con:entry>
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>TESTRAIL</con:authProfile>
             </con:entry>
           </con:environmentSpec>
         </con:request>
@@ -558,6 +604,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:method>
       <con:environmentSpec>
@@ -574,6 +623,9 @@
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
         <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
       </con:environmentSpec>
@@ -631,10 +683,12 @@
           <con:request name="Request 1" id="7d52e5bb-7557-4940-a40d-782345205f84" mediaType="application/json">
             <con:settings/>
             <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+            <con:request/>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters/>
             <con:environmentSpec>
               <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -652,6 +706,9 @@
               <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
                 <con:authProfile>QALATEST</con:authProfile>
               </con:entry>
+              <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+                <con:authProfile>TESTRAIL</con:authProfile>
+              </con:entry>
             </con:environmentSpec>
           </con:request>
           <con:environmentSpec>
@@ -668,6 +725,9 @@
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
           </con:environmentSpec>
@@ -705,10 +765,12 @@
           <con:request name="Request 1" id="10c476fe-0e8a-4c36-8075-244bc7d420df" mediaType="application/json">
             <con:settings/>
             <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+            <con:request/>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters/>
             <con:environmentSpec>
               <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -725,6 +787,9 @@
               </con:entry>
               <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
                 <con:authProfile>QALATEST</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+                <con:authProfile>TESTRAIL</con:authProfile>
               </con:entry>
             </con:environmentSpec>
           </con:request>
@@ -744,6 +809,9 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:method>
         <con:environmentSpec>
@@ -760,6 +828,9 @@
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
         </con:environmentSpec>
@@ -804,10 +875,12 @@
         <con:request name="Request 1" id="cf205ec8-706e-4dab-9a44-eb68ce21ec40" mediaType="application/json">
           <con:settings/>
           <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -824,6 +897,9 @@
             </con:entry>
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>TESTRAIL</con:authProfile>
             </con:entry>
           </con:environmentSpec>
         </con:request>
@@ -843,6 +919,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:method>
       <con:environmentSpec>
@@ -859,6 +938,9 @@
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
         <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
       </con:environmentSpec>
@@ -915,10 +997,12 @@
           <con:request name="Request 1" id="066286ed-7708-454c-941d-416976d1d19e" mediaType="application/json">
             <con:settings/>
             <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+            <con:request/>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters/>
             <con:environmentSpec>
               <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -936,6 +1020,9 @@
               <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
                 <con:authProfile>QALATEST</con:authProfile>
               </con:entry>
+              <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+                <con:authProfile>TESTRAIL</con:authProfile>
+              </con:entry>
             </con:environmentSpec>
           </con:request>
           <con:environmentSpec>
@@ -952,6 +1039,9 @@
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
           </con:environmentSpec>
@@ -995,10 +1085,12 @@
           <con:request name="Request 1" id="ba61837c-4576-4ef8-9d91-e3b4cf51ca64" mediaType="application/json">
             <con:settings/>
             <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+            <con:request/>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters/>
             <con:environmentSpec>
               <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -1015,6 +1107,9 @@
               </con:entry>
               <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
                 <con:authProfile>QALATEST</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+                <con:authProfile>TESTRAIL</con:authProfile>
               </con:entry>
             </con:environmentSpec>
           </con:request>
@@ -1034,6 +1129,9 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:method>
         <con:environmentSpec>
@@ -1050,6 +1148,9 @@
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
         </con:environmentSpec>
@@ -1094,10 +1195,12 @@
         <con:request name="Request 1" id="7bd99ec1-f970-4ab5-ade7-02a47cc7796f" mediaType="application/json">
           <con:settings/>
           <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -1114,6 +1217,9 @@
             </con:entry>
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>TESTRAIL</con:authProfile>
             </con:entry>
           </con:environmentSpec>
         </con:request>
@@ -1133,6 +1239,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:method>
       <con:environmentSpec>
@@ -1149,6 +1258,9 @@
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
         <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
       </con:environmentSpec>
@@ -1205,10 +1317,12 @@
           <con:request name="Request 1" id="cc590b7f-ed0a-48dd-a234-ad1c4a1f0589" mediaType="application/json">
             <con:settings/>
             <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+            <con:request/>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters/>
             <con:environmentSpec>
               <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -1226,6 +1340,9 @@
               <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
                 <con:authProfile>QALATEST</con:authProfile>
               </con:entry>
+              <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+                <con:authProfile>TESTRAIL</con:authProfile>
+              </con:entry>
             </con:environmentSpec>
           </con:request>
           <con:environmentSpec>
@@ -1242,6 +1359,9 @@
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
           </con:environmentSpec>
@@ -1292,10 +1412,12 @@
           <con:request name="Request 1" id="a842ac2e-88e2-4499-a399-ae10355d46e7" mediaType="application/json">
             <con:settings/>
             <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+            <con:request/>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters/>
             <con:environmentSpec>
               <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -1312,6 +1434,9 @@
               </con:entry>
               <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
                 <con:authProfile>QALATEST</con:authProfile>
+              </con:entry>
+              <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+                <con:authProfile>TESTRAIL</con:authProfile>
               </con:entry>
             </con:environmentSpec>
           </con:request>
@@ -1331,6 +1456,9 @@
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>Inherit From Parent</con:authProfile>
             </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>Inherit From Parent</con:authProfile>
+            </con:entry>
           </con:environmentSpec>
         </con:method>
         <con:environmentSpec>
@@ -1347,6 +1475,9 @@
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
         </con:environmentSpec>
@@ -1391,10 +1522,12 @@
         <con:request name="Request 1" id="ef1056bc-0300-4315-bcd6-28466308f070" mediaType="application/json">
           <con:settings/>
           <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+          <con:request/>
           <con:credentials>
             <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
             <con:authType>No Authorization</con:authType>
           </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:parameters/>
           <con:environmentSpec>
             <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -1411,6 +1544,9 @@
             </con:entry>
             <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
               <con:authProfile>QALATEST</con:authProfile>
+            </con:entry>
+            <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+              <con:authProfile>TESTRAIL</con:authProfile>
             </con:entry>
           </con:environmentSpec>
         </con:request>
@@ -1430,6 +1566,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:method>
       <con:environmentSpec>
@@ -1446,6 +1585,9 @@
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
         <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
       </con:environmentSpec>
@@ -1549,10 +1691,12 @@
       <con:request name="Request 1" id="c7135942-6467-48c9-9294-2ec5a74b4fe9" mediaType="application/json">
         <con:settings/>
         <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -1569,6 +1713,9 @@
           </con:entry>
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
           </con:entry>
         </con:environmentSpec>
       </con:request>
@@ -1588,6 +1735,9 @@
         <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
       </con:environmentSpec>
     </con:method>
     <con:environmentSpec>
@@ -1604,6 +1754,9 @@
         <con:authProfile>Inherit From Parent</con:authProfile>
       </con:entry>
       <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
         <con:authProfile>Inherit From Parent</con:authProfile>
       </con:entry>
     </con:environmentSpec>
@@ -1658,10 +1811,12 @@
       <con:request name="Request 1" id="e52a92ec-21df-4cfa-a1ae-109c2d4190eb" mediaType="application/json">
         <con:settings/>
         <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -1679,6 +1834,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
       <con:environmentSpec>
@@ -1695,6 +1853,9 @@
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
         <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
       </con:environmentSpec>
@@ -1732,10 +1893,12 @@
       <con:request name="Request 1" id="5747a12c-2282-46b2-a403-c731704ccec7" mediaType="application/json">
         <con:settings/>
         <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+        <con:request/>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -1753,6 +1916,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>QALATEST</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:request>
       <con:environmentSpec>
@@ -1769,6 +1935,9 @@
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
         <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
           <con:authProfile>Inherit From Parent</con:authProfile>
         </con:entry>
       </con:environmentSpec>
@@ -1789,6 +1958,9 @@
       <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
         <con:authProfile>Inherit From Parent</con:authProfile>
       </con:entry>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
     </con:environmentSpec>
   </con:resource>
   <con:environmentSpec>
@@ -1805,6 +1977,9 @@
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
     <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
   </con:environmentSpec>

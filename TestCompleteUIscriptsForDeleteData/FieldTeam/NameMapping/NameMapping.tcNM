@@ -305,6 +305,14 @@
 													</Property>
 												</Properties>
 											</Child>
+											<Child Name="TextBoxSearchProject" Key="{44F3576F-2B69-47D7-B0E6-B3D5D4154F3F}">
+												<Image FileName="-1634362206" Left="19" Top="203" Right="404" Bottom="245" />
+												<Selectors>
+													<Selector>
+														<Value Value="xpath=//div[@id=&apos;menuheader&apos;]//input[contains(@id,&apos;quickSearch1&apos;)]" />
+													</Selector>
+												</Selectors>
+											</Child>
 										</Children>
 									</Child>
 									<Child Name="frameHeaderframe" Key="{A1048F7F-8864-4ECB-9FFB-F6EC3BE84DA4}" ExtendedFind="True">
@@ -572,6 +580,7 @@
 					<Child Name="LnkSubContract" Owner="{878C8B77-FB86-4D19-BC1A-9D3BBBF20267}" />
 					<Child Name="LblBudgetAndCostManagement" Owner="{9CAA9CB5-23D8-4C36-8C1D-C445440FF1DE}" />
 					<Child Name="LnkPCI" Owner="{7FD5A89A-04A7-42BB-92D5-83F37FE9420F}" />
+					<Child Name="TextBoxSearchProject" Owner="{44F3576F-2B69-47D7-B0E6-B3D5D4154F3F}" />
 				</Child>
 				<Child Name="frameHeaderframe" Owner="{A1048F7F-8864-4ECB-9FFB-F6EC3BE84DA4}">
 					<Child Name="LnkNavArrow" Owner="{37DE5AC3-59BF-43F2-B8BF-F842F76C5AED}" />

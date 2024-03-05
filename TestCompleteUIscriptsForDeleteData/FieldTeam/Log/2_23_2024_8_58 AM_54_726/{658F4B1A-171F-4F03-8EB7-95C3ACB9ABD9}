@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 13">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="Improve your test performance."/>
+			<Prp name="priority" type="I" value="500"/>
+			<Prp name="line no" type="I" value="22"/>
+			<Prp name="id" type="I" value="13"/>
+			<Prp name="date" type="D" value="45345.3746055671"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;style&gt;body {font-family : Segoe UI, Tahoma, Arial, Helvetica, sans-serif; font-size : 10pt; font-weight : normal; padding : 14px 8px 8px 14px; margin : 0 0 0 0;} p {margin : 4px 0 4px 0; padding : 0 0 0 0;} h4 {font-size: 10pt; font-weight : bold; margin : 12px 0 0 16px; padding : 0 0 0 0;} table {margin-left : 16px; border-top: 1px solid grey;} td {font-size : 10pt; font-weight : normal; padding-left : 8px;} &lt;/style&gt;&lt;style&gt;p, td, th{font-size: 10pt;} td, th {border-bottom: 1px solid #cdcdcd; padding: 2px 10px 2px 10px;}table.tableIntelegentFix th {text-align: left; background: #cdcdcd; font-weight : normal;}  p {padding : 0; margin : 4 0 4 0px; line-height: 16pt;} table {border: 0px;}&lt;/style&gt;&lt;body&gt;&lt;p&gt;You can improve the performance of the object search in the test.&lt;/p&gt;&lt;p&gt;The &lt;code&gt;NameMapping.&amp;#8203;Sys.&amp;#8203;Browser.&amp;#8203;PgeShowImportedData.&amp;#8203;&lt;a href=&quot;namemapping://{61A30EBA-D6B0-4A01-924E-47675622F6C9}.{5D74215A-FDCD-46DB-81DC-E32A5602E26E}&quot; title=&quot;Missing object. Click to view and change its recognition settings.&quot;&gt;&lt;span style=&quot;color: red; font-weight: bold;&quot;&gt;ChkBoxShowCurrentProj&lt;/span&gt;&lt;/a&gt;&lt;/code&gt; object&lt;/p&gt;&lt;p&gt;can be found faster if you make &lt;code&gt;//input[@id='showHideCurrProj']&lt;/code&gt; the first selector in its selector list.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;br/&gt;&lt;/p&gt;&lt;p&gt; &lt;style&gt; a.btn { background-color: #00b2ff; color: white; padding: 5px 20px; text-decoration: none; font-weight : bold; } &lt;/style&gt;&lt;a class=&quot;btn&quot; href=&quot;reorderselectors://54Wh5r2zAQAEAHJvb3QGAAkAcHJvcGNvdW50AAAAAAQAdHlwZQEACwBSZWNvZ25pdGlvbgYAY29u&#xA;ZmlnAQAVAERlZmF1bHQgQ29uZmlndXJhdGlvbgcAcHJvamVjdAEAJAA2MUEzMEVCQXhENkIweDRB&#xA;MDF4OTI0RXg0NzY3NTYyMkY2QzkCAG5tAQAkADVENzQyMTVBeEZEQ0R4NDZEQng4MURDeEUzMkE1&#xA;NjAyRTI2RQQAbW9kZQAAAgAEAAsAZm91bmR2YWx1ZXMCAAEAMAEAIAAwMDAwMDAwMDAwMDAwMDAw&#xA;MDAwMDAwMDAwMDAwMDAwMAEAMQEAwpUAQDc4MDA3MDAwNjEwMDc0MDA2ODAwM0QwMDJGMDAyRjAw&#xA;NjkwMDZFMDA3MDAwNzUwMDc0MDA1QjAwNDAwMDY5MDA2NDAwM0QwMDI3MDA3MzAwNjgwMDZGMDA3&#xA;NzAwNDgwMDY5MDA2NDAwNjUwMDQzMDA3NTAwNzIwMDcyMDA1MDAwNzIwMDZGMDA2QTAwMjcwMDVE&#xA;MDAAAAYAdmFsdWVzAQABADABAMKVAEA3ODAwNzAwMDYxMDA3NDAwNjgwMDNEMDAyRjAwMkYwMDY5&#xA;MDA2RTAwNzAwMDc1MDA3NDAwNUIwMDQwMDA2OTAwNjQwMDNEMDAyNzAwNzMwMDY4MDA2RjAwNzcw&#xA;MDQ4MDA2OTAwNjQwMDY1MDA0MzAwNzUwMDcyMDA3MjAwNTAwMDcyMDA2RjAwNkEwMDI3MDA1RDAw&#xA;AAAHAG1hdGNoZWQAAAAABQBuYW1lcwAAAAA=&quot;&gt;Improve Performance&lt;/a&gt;&lt;/p&gt;&lt;br/&gt;&lt;!--p&gt;&lt;b style=&quot;color: #777;&quot;&gt;Tips&lt;/b&gt;&lt;/p&gt;&lt;ul style=&quot;margin-top: 10px&quot;&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul--&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 5">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="11"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.3743296644"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.PgeCmicR12LaunchPage.BtnLaunchSoftware"/>
+					<Prp name="click point x" type="I" value="1611"/>
+					<Prp name="image file name" type="S" value="visImage2.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="1405"/>
+					<Prp name="object right" type="I" value="1818"/>
+					<Prp name="object top" type="I" value="810"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="840"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="870"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="11"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="date" type="D" value="45345.3743310995"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (137, 20) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.Browser.PgeCmicR12LaunchPage.BtnLaunchSoftware&#xA;(Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatest.cmicpaas.com/cmiclaunch//cmiclaunch_R12.html&quot;).FindElement(&quot;//input[@name='runSoftware']&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 7">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="44"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.3744077431"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.pageSignIn.TextBoxPassword"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage4.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="690"/>
+					<Prp name="object right" type="I" value="1230"/>
+					<Prp name="object top" type="I" value="697"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="775"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text 'raman1' was entered in the text editor."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="44"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="date" type="D" value="45345.3744091204"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Browser.pageSignIn.TextBoxPassword&#xA;(Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatestinfra.cmicpaas.com/oam/server/obrareq.cgi?encquery%3DyZlmM4EzLPAwcBi1cktdT7ANzTq%2FiTxA%2FyiTrL8mlxnTTWWdEkDxUfqBDSzEyaDydY0E52E2UVSY4wHLxaIrSo5E7RS2K9pS4%2Fh%2FdiJryGWO5hF%2BmMuNWPGpJJ8v0o%2FDPSVL2mSysAdpQXweGoBpZcDjFJvqjHQjP8zlscXVMqSxzAf4t7sM7dZC9RYZM%2BD8bBW0tILV8af%2BR%2F1RKkCgfyqXF9heBsu5nEjICkFEThA6K0P4y%2FZii%2BOM7SEn4JqwpJUoD9dIH2q79LLkPqP7RW4L8cMwfqaUHqk3uOoAtKfxWnVhqKERZT0Gzu1%2B%2FPjR%20agentid%3DOAMJSP1%20ver%3D1%20crmethod%3D2%26cksum%3D63745a967b230e9562005e5a578ca9007001dc25&amp;ECID-Context=1.00jS9wDzOz3EgKtawdicMG0003Do00Hu87%3BkXjE&quot;).FindElement(&quot;#password&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 4">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="10"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.3743255324"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.PgeProjectManagement.FindElement(&quot;//div[2]/div/div[2]/ul/li/a&quot;)"/>
+					<Prp name="click point x" type="I" value="1611"/>
+					<Prp name="image file name" type="S" value="visImage1.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="1406"/>
+					<Prp name="object right" type="I" value="1817"/>
+					<Prp name="object top" type="I" value="398"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="427"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="456"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="10"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="date" type="D" value="45345.3743275"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (137, 19) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatest.cmicpaas.com/cmiclaunch//cmiclaunch_R12.html&quot;).FindElement(&quot;//div[2]/div/div[2]/ul/li/a&quot;)"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 17">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="40"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.3747379514"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.PgeShowImportedData.Confirm.buttonOk"/>
+					<Prp name="click point x" type="I" value="998"/>
+					<Prp name="image file name" type="S" value="visImage13.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="945"/>
+					<Prp name="object right" type="I" value="1052"/>
+					<Prp name="object top" type="I" value="253"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="282"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="311"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="40"/>
+			<Prp name="id" type="I" value="17"/>
+			<Prp name="date" type="D" value="45345.3747388773"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (53, 29) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.Browser.PgeShowImportedData.Confirm.buttonOk&#xA;(Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatest.cmicpaas.com/cmicqalatest/PmBidItems/csvUploadRequest.do&quot;).Confirm.Button(&quot;OK&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 15">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="37"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.3747263542"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.PgeProjectManagement.FindElement(&quot;#selectItemCB42&quot;)"/>
+					<Prp name="click point x" type="I" value="30"/>
+					<Prp name="image file name" type="S" value="visImage11.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="20"/>
+					<Prp name="object right" type="I" value="40"/>
+					<Prp name="object top" type="I" value="887"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="908"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="929"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="id" type="I" value="15"/>
+			<Prp name="date" type="D" value="45345.3747279167"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (7, 14) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatest.cmicpaas.com/cmicqalatest/PmBidItems/csvUploadRequest.do&quot;).FindElement(&quot;#selectItemCB42&quot;)"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 18">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The process &quot;chrome&quot; was closed."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="56"/>
+			<Prp name="id" type="I" value="18"/>
+			<Prp name="date" type="D" value="45345.3747447801"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="The close command was sent to:&#xA;* the window with the 'Bid Items Edit - Google Chrome' caption;&#xA;* the window with the 'CMiC Project Management - Google Chrome' caption.&#xA;&#xA;&#xA;Tested object:&#xA;Aliases.Browser&#xA;(Sys.Browser(&quot;chrome&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 9">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="17"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.3745150463"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.PgeProjectManagement.frameTreeframe.PnlBidManagement"/>
+					<Prp name="click point x" type="I" value="119"/>
+					<Prp name="image file name" type="S" value="visImage6.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="41"/>
+					<Prp name="object right" type="I" value="197"/>
+					<Prp name="object top" type="I" value="518"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="529"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="540"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="17"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="date" type="D" value="45345.3745163194"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (52, 7) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.Browser.PgeProjectManagement.frameTreeframe.PnlBidManagement&#xA;(Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatest.cmicpaas.com/cmicqalatest/SdMenu/&quot;).FindElement(&quot;#treeFrame&quot;).Panel(&quot;treeMenuDiv&quot;).Table(0).Cell(0, 0).Panel(&quot;treeDiv1&quot;).Panel(&quot;Bs_Tree_0_e_93783786_drag&quot;).Panel(0).TextNode(&quot;Bs_Tree_0_e_93783786_caption2&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 10">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="19"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.3745224653"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.PgeProjectManagement.frameTreeframe.LblBidItems"/>
+					<Prp name="click point x" type="I" value="117"/>
+					<Prp name="image file name" type="S" value="visImage7.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="77"/>
+					<Prp name="object right" type="I" value="158"/>
+					<Prp name="object top" type="I" value="675"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="686"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="697"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="19"/>
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="date" type="D" value="45345.3745255093"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (27, 7) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.Browser.PgeProjectManagement.frameTreeframe.LblBidItems&#xA;(Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatest.cmicpaas.com/cmicqalatest/SdMenu/&quot;).FindElement(&quot;#treeFrame&quot;).Panel(&quot;treeMenuDiv&quot;).Table(0).Cell(0, 0).Panel(&quot;treeDiv1&quot;).Panel(&quot;Bs_Tree_0_e_93783789_drag&quot;).Panel(0).Link(&quot;Bs_Tree_0_e_93783789_href&quot;).TextNode(&quot;Bs_Tree_0_e_93783789_caption2&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 3">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="7"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.374319375"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.PgeCmicR12LaunchPage.LnkProjectManagement"/>
+					<Prp name="click point x" type="I" value="1169"/>
+					<Prp name="image file name" type="S" value="visImage0.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="964"/>
+					<Prp name="object right" type="I" value="1375"/>
+					<Prp name="object top" type="I" value="630"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="659"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="688"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="7"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="date" type="D" value="45345.3743211921"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (137, 19) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.Browser.PgeCmicR12LaunchPage.LnkProjectManagement&#xA;(Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatest.cmicpaas.com/cmiclaunch//cmiclaunch_R12.html&quot;).FindElement(&quot;//a[.='Project Management']&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 11">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="20"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.374566956"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.PgeProjectManagement.frameHeaderframe.LnkNavArrow"/>
+					<Prp name="click point x" type="I" value="1767"/>
+					<Prp name="image file name" type="S" value="visImage8.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="1761"/>
+					<Prp name="object right" type="I" value="1774"/>
+					<Prp name="object top" type="I" value="154"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="164"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="174"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="20"/>
+			<Prp name="id" type="I" value="11"/>
+			<Prp name="date" type="D" value="45345.3745728357"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (4, 7) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.Browser.PgeProjectManagement.frameHeaderframe.LnkNavArrow&#xA;(Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatest.cmicpaas.com/cmicqalatest/SdMenu/&quot;).FindElement(&quot;#headerFrame&quot;).Panel(0).Table(0).Cell(0, 0).Table(0).Cell(0, 2).Table(&quot;headerButtonContainer&quot;).Cell(0, 2).Panel(&quot;TabNavArrowR&quot;).Link(0))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 6">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="42"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.3743695602"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.pageSignIn.TextBoxUsername"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage3.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="690"/>
+					<Prp name="object right" type="I" value="1230"/>
+					<Prp name="object top" type="I" value="596"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="674"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The text 'raman' was entered in the text editor."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="42"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="date" type="D" value="45345.374371956"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Browser.pageSignIn.TextBoxUsername&#xA;(Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatestinfra.cmicpaas.com/oam/server/obrareq.cgi?encquery%3DyZlmM4EzLPAwcBi1cktdT7ANzTq%2FiTxA%2FyiTrL8mlxnTTWWdEkDxUfqBDSzEyaDydY0E52E2UVSY4wHLxaIrSo5E7RS2K9pS4%2Fh%2FdiJryGWO5hF%2BmMuNWPGpJJ8v0o%2FDPSVL2mSysAdpQXweGoBpZcDjFJvqjHQjP8zlscXVMqSxzAf4t7sM7dZC9RYZM%2BD8bBW0tILV8af%2BR%2F1RKkCgfyqXF9heBsu5nEjICkFEThA6K0P4y%2FZii%2BOM7SEn4JqwpJUoD9dIH2q79LLkPqP7RW4L8cMwfqaUHqk3uOoAtKfxWnVhqKERZT0Gzu1%2B%2FPjR%20agentid%3DOAMJSP1%20ver%3D1%20crmethod%3D2%26cksum%3D63745a967b230e9562005e5a578ca9007001dc25&amp;ECID-Context=1.00jS9wDzOz3EgKtawdicMG0003Do00Hu87%3BkXjE&quot;).FindElement(&quot;#username&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{E48CC64F-24FC-4D20-B9BC-E6DE08C9208F}"/>
+			<Prp name="unit 1" type="S" value="{29A31606-0511-4C7F-B752-08BBD0FA3A50}"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="Google Chrome was launched."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="17"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="date" type="D" value="45345.3742891782"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;head&gt;&lt;style&gt;td{font-family: Courier New, Consolas, Segoe UI; font-size : 14px;}&lt;/style&gt;&lt;/head&gt;											  &lt;body&gt;											  &lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;											  &lt;tr&gt;&lt;td&gt;&lt;b&gt;Browser:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Google Chrome ver.122.0.6261.57 (x64)&lt;/td&gt;&lt;/tr&gt;											  &lt;tr&gt;&lt;td&gt;&lt;b&gt;Executable:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe&lt;/td&gt;&lt;/tr&gt;											  &lt;tr&gt;&lt;td style=&quot;padding-right: 8px;&quot;&gt;&lt;b&gt;Command-line args:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;											  &lt;tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;URL:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;https://qalatest.cmicpaas.com/cmiclaunch//cmiclaunch_R12.html&lt;/td&gt;&lt;/tr&gt;											  &lt;tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;PID:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;13104&lt;/td&gt;&lt;/tr&gt;											  &lt;/table&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The process &quot;chrome&quot; was closed."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="6"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45345.3742665972"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="The close command was sent to the window with the 'FieldTeamAPIs_TestRun_23/02/2024 - TestRail - Google Chrome' caption. &#xA;&#xA;Tested object:&#xA;Aliases.Browser&#xA;(Sys.Browser(&quot;chrome&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 12">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="21"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.3745869213"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.PgeProjectManagement.frameHeaderframe.BtnShowimporteddata"/>
+					<Prp name="click point x" type="I" value="1640"/>
+					<Prp name="image file name" type="S" value="visImage9.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="1530"/>
+					<Prp name="object right" type="I" value="1751"/>
+					<Prp name="object top" type="I" value="137"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="156"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="176"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="21"/>
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="date" type="D" value="45345.3745894676"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (73, 13) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.Browser.PgeProjectManagement.frameHeaderframe.BtnShowimporteddata&#xA;(Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatest.cmicpaas.com/cmicqalatest/SdMenu/&quot;).FindElement(&quot;#headerFrame&quot;).Panel(0).Table(0).Cell(0, 0).Table(0).Cell(0, 2).Table(&quot;headerButtonContainer&quot;).Cell(0, 1).Panel(&quot;hdrButtonDiv&quot;).Table(0).Cell(0, 18).Button(&quot;ShowImportedData&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 14">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="22"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.3746118403"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.PgeShowImportedData.ChkBoxShowCurrentProj"/>
+					<Prp name="click point x" type="I" value="27"/>
+					<Prp name="image file name" type="S" value="visImage10.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="17"/>
+					<Prp name="object right" type="I" value="37"/>
+					<Prp name="object top" type="I" value="172"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="182"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="192"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="22"/>
+			<Prp name="id" type="I" value="14"/>
+			<Prp name="date" type="D" value="45345.3746134722"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (7, 7) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.Browser.PgeShowImportedData.ChkBoxShowCurrentProj&#xA;(Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatest.cmicpaas.com/cmicqalatest/PmBidItems/showImportedData.do?projOraseq=67404213&amp;compCode=RJC&amp;sigmaPageSize=25&quot;).FindElement(&quot;//input[@id='showHideCurrProj']&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 8">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="45"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.3744119444"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.pageSignIn.BtnSubmit"/>
+					<Prp name="click point x" type="I" value="960"/>
+					<Prp name="image file name" type="S" value="visImage5.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="668"/>
+					<Prp name="object right" type="I" value="1253"/>
+					<Prp name="object top" type="I" value="807"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="834"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="861"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="45"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="date" type="D" value="45345.3744138773"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (195, 18) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.Browser.pageSignIn.BtnSubmit&#xA;(Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatestinfra.cmicpaas.com/oam/server/obrareq.cgi?encquery%3DyZlmM4EzLPAwcBi1cktdT7ANzTq%2FiTxA%2FyiTrL8mlxnTTWWdEkDxUfqBDSzEyaDydY0E52E2UVSY4wHLxaIrSo5E7RS2K9pS4%2Fh%2FdiJryGWO5hF%2BmMuNWPGpJJ8v0o%2FDPSVL2mSysAdpQXweGoBpZcDjFJvqjHQjP8zlscXVMqSxzAf4t7sM7dZC9RYZM%2BD8bBW0tILV8af%2BR%2F1RKkCgfyqXF9heBsu5nEjICkFEThA6K0P4y%2FZii%2BOM7SEn4JqwpJUoD9dIH2q79LLkPqP7RW4L8cMwfqaUHqk3uOoAtKfxWnVhqKERZT0Gzu1%2B%2FPjR%20agentid%3DOAMJSP1%20ver%3D1%20crmethod%3D2%26cksum%3D63745a967b230e9562005e5a578ca9007001dc25&amp;ECID-Context=1.00jS9wDzOz3EgKtawdicMG0003Do00Hu87%3BkXjE&quot;).FindElement(&quot;#submitBtn&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 2">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="Navigating to the https://qalatest.cmicpaas.com/cmiclaunch//cmiclaunch_R12.htm... page."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="17"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="date" type="D" value="45345.3743159143"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="URL: https://qalatest.cmicpaas.com/cmiclaunch//cmiclaunch_R12.html&#xA;&#xA;Aliases.Browser"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 16">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="39"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45345.3747306366"/>
+					<Prp name="object name" type="S" value="Aliases.Browser.PgeShowImportedData.BtnReValidate"/>
+					<Prp name="click point x" type="I" value="1488"/>
+					<Prp name="image file name" type="S" value="visImage12.png"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="1432"/>
+					<Prp name="object right" type="I" value="1545"/>
+					<Prp name="object top" type="I" value="100"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point y" type="I" value="121"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="142"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="39"/>
+			<Prp name="id" type="I" value="16"/>
+			<Prp name="date" type="D" value="45345.3747327083"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (37, 14) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.Browser.PgeShowImportedData.BtnReValidate&#xA;(Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatest.cmicpaas.com/cmicqalatest/PmBidItems/csvUploadRequest.do&quot;).FindElement(&quot;#revalidateButton&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

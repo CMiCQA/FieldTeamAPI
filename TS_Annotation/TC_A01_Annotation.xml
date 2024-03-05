@@ -10,7 +10,7 @@
         <con:configuration>
           <generatedDataCount>1</generatedDataCount>
           <generatorsTotalNumber>4</generatorsTotalNumber>
-          <lastSelectedProperty>0</lastSelectedProperty>
+          <lastSelectedProperty>2</lastSelectedProperty>
           <GeneratorType0>STR</GeneratorType0>
           <PropertyName0>VUuid</PropertyName0>
           <repetitionCountVUuid>0</repetitionCountVUuid>
@@ -117,7 +117,9 @@
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:parameters/>
+        <con:parameters>
+          <con:entry key="cmic-env" value=""/>
+        </con:parameters>
         <con:environmentSpec>
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
@@ -127,6 +129,9 @@
           </con:entry>
           <con:entry environmentId="8c42fbef-6237-4219-8044-b73695a4c38c">
             <con:authProfile>QADAILY2</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
           </con:entry>
         </con:environmentSpec>
       </con:restRequest>
@@ -177,6 +182,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -220,6 +228,9 @@
           </con:entry>
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
           </con:entry>
         </con:environmentSpec>
       </con:restRequest>
@@ -279,6 +290,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -328,6 +342,9 @@
           </con:entry>
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
           </con:entry>
         </con:environmentSpec>
       </con:restRequest>
@@ -386,6 +403,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -399,7 +419,7 @@
         </con:settings>
         <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
         <con:request>{\r
-   "PmanContentFilename" : "test.xfdf",\r
+   "PmanContentFilename" : "${Properties#PmanName}",\r
    "PmanCreationDate" : "2019-07-10T18:38:23-04:00",\r
    "PmanCreationRevNum" : 0,\r
    "PmanCreatorContactCode" : "${Login#Response#$['contactCode']}",\r
@@ -447,6 +467,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -480,13 +503,13 @@
           <con:name>01HP3M5XF2EWG6ADGPEV1SZTHT.xfdf</con:name>
           <con:contentType>application/octet-stream</con:contentType>
           <con:size>792</con:size>
-          <con:contentId>01HP3M5XF2EWG6ADGPEV1SZTHT.xfdf</con:contentId>
+          <con:contentId>content-file-name</con:contentId>
           <con:data>UEsDBBQACAgIAAoxSFgAAAAAAAAAAAAAAAAfAAAAMDFIUDNNNVhGMkVXRzZBREdQRVYxU1pUSFQueGZkZm1SXU/bMBR9n7T/YHmvNP5IUidVEpTSBpg0qRqMTbyZxGktJXaIDS3/fjelDA3hJ99zz/0+2fmh79CzGp22JscsoBgpU9tGm22Of91WswSfF1+/ZIe2aRFwF26QtcrxMCqnxmeFJ9C4HO+8HxaEGBfIxj6ooLY9mYIILjJpjPWuyNzjkxwVqm1nxxx/qxIeUShYj0p6qN9ID5lXC04B5zShcZREyT1GnzliAY62k1s3NaONx8jIHmiUXW3CH/Gfiq9/X87L1eVmfcdu7m+vbjEa5HZiwMcNTTvrlXRPo+qV8ZtR1fq0BJJ8QripZQexDGmDcsRQCwUhxudYhDxgfB5G4RmjXASCxiHnZ4zFNIABeAw4m4uAxSIJBUbOv0yZnO10g5HXfrJ+yl4a9F1qg9FeN36X4zCgxwcLrK3x0IMrGEOMRMg9Qv2M/IPhQG//2ajrnVcHX2QPtnn5cJ79fh/sw8COW8LSNCWHne+70w0Xh1b+RwT7yHT1TvUSrilncAlJQCUEYlq5KDfXd2/aKevRPki/YOCGfbwS3KDqHHNAOIwxfOh/KDIyNVm8j/LePsxEXgUD7pOCANONQz3os9WqyXFU0pKn63KdRjxJxUWZijVYIqqqZD4XJUZ21FttZJfjZcWjiiU0TcIwpAmLQkEvRFWKeRwtV8slJseak2iLv1BLBwgBZ5llAQIAABgDAABQSwECFAAUAAgICAAKMUhYAWeZZQECAAAYAwAAHwAAAAAAAAAAAAAAAAAAAAAAMDFIUDNNNVhGMkVXRzZBREdQRVYxU1pUSFQueGZkZlBLBQYAAAAAAQABAE0AAABOAgAAAAA=</con:data>
           <con:id>36fe5833-69b1-42cf-9fd0-9c453c71e1ae</con:id>
         </con:attachment>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="content-file-name" value="C:/Users/Administrator/Documents/01HP3M5XF2EWG6ADGPEV1SZTHT.xfdf"/>
+          <con:entry key="content-file-name" value="${CPM Create an Annotation Record#Response#$['PmanContentFilename']}"/>
         </con:parameters>
         <con:environmentSpec>
           <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
@@ -503,6 +526,9 @@
           </con:entry>
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
           </con:entry>
         </con:environmentSpec>
       </con:restRequest>
@@ -553,6 +579,9 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -602,10 +631,98 @@
           <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+            <con:authProfile>TESTRAIL</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:properties/>
+  <con:setupScript/>
+  <con:tearDownScript>import groovy.json.JsonOutput
+import java.net.HttpURLConnection
+import java.net.URL
+
+// Function to post test result to TestRail
+def postTestResultToTestRail() {
+
+	def testRailUrl = context.expand( '${#Global#TestRailUrl}' )
+	def testRailUsername = context.expand( '${#Global#TestRailUserName}' )
+	def testRailApiKey = context.expand( '${#Global#TestRailAPIkey}' )
+	
+	// Define your TestRail project ID and test run ID
+	def projectId = context.expand( '${#Project#projectID}' )
+	def testRunId = context.expand( '${#Project#RunID}' )
+	
+	// Define the test case ID for the test you want to post results for
+	def testCaseId = context.expand( '${#TestCase#TestCaseID}' )  
+	
+	// loop through previous steps to get results to see if all passed
+	def testCaseName = testRunner.testCase.name
+	def failedTestStep = ""
+	def testMsg = ""
+	def result = ""
+	def statusId = ""
+	def comment = ""
+	
+	for(r in testRunner.results) {
+		if(r.getStatus().toString() != "PASS") {
+			result = context.expand('${' + r.testStep.name + '#Response}')
+		 	failedTestStep =  r.testStep.name
+			break
+		}
+	}
+	// set test status and comment based on previous step results
+	if(failedTestStep == "") {
+		testMsg = testCaseName + " has passed successfully"
+		statusId = 1
+		comment = testMsg 
+	} else {
+		testMsg = testCaseName + " has failed on test step: \'" + failedTestStep + "\'"
+		if(result != "") {
+			testMsg = testMsg + " with reason - " + result
+		}
+		statusId = 5
+		comment = testMsg 
+	}	
+    def postUrl = "${testRailUrl}/add_result_for_case/${testRunId}/${testCaseId}"
+
+    def connection = new URL(postUrl).openConnection() as HttpURLConnection
+    connection.requestMethod = 'POST'
+    connection.doOutput = true
+    connection.setRequestProperty("Content-Type", "application/json")
+    connection.setRequestProperty("Authorization", "Basic " + "${testRailUsername}:${testRailApiKey}".bytes.encodeBase64().toString())
+
+    def requestBody = [
+        status_id: statusId,
+        comment: comment
+    ]
+
+    def outputStream = connection.outputStream
+    outputStream.write(JsonOutput.toJson(requestBody).getBytes())
+    outputStream.flush()
+
+    def responseCode = connection.responseCode
+    def responseMessage = connection.responseMessage
+
+    log.info("Response code: ${responseCode}")
+    log.info("Response message: ${responseMessage}")
+}
+
+// Post test result to TestRail
+postTestResultToTestRail()</con:tearDownScript>
+  <con:properties>
+    <con:property>
+      <con:name>TestCaseID</con:name>
+      <con:value>104538</con:value>
+    </con:property>
+  </con:properties>
   <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+  <con:tagId>e82ab375-911f-4d0f-b76b-2c1095d3f890</con:tagId>
+  <con:tagId>c4a9b3b0-fe4d-44b8-a1cd-e873e92e452a</con:tagId>
 </con:testCase>

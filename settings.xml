@@ -23,12 +23,20 @@
       </con:testCases>
     </con:requirement>
   </con:requirements>
-  <con:properties/>
+  <con:properties>
+    <con:property>
+      <con:name>projectID</con:name>
+    </con:property>
+    <con:property>
+      <con:name>RunID</con:name>
+    </con:property>
+  </con:properties>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
   <con:jmsConnectionContainer/>
   <con:oAuth2ProfileContainer/>
   <con:oAuth1ProfileContainer/>
+  <con:beforeRunScript/>
   <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
     <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
 // This code is often used for adding custom authentication to ReadyAPI functional tests
@@ -58,6 +66,9 @@
 // pw.close()
 // fos.close()</con:script>
   </con:eventHandlers>
+  <con:eventHandlers type="TestSuiteRunListener.afterTestCase" name="TestSuiteRunListener.afterTestCase">
+    <con:script/>
+  </con:eventHandlers>
   <con:environment id="4a8025f4-94ea-4501-9fea-c97dcac8b6cf" name="NOVA TEST" index="0">
     <con:service type="REST" name="ConstructPM Webservices">
       <con:endpoint authProfile="NOVATEST" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">https://nova-mobile-test.cmiccloud.com/cmictestnew</con:endpoint>
@@ -65,6 +76,14 @@
     <con:service type="REST" name="All Webservices">
       <con:endpoint authProfile="NOVATEST" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">https://nova-mobile-test.cmiccloud.com/cmictestnew</con:endpoint>
     </con:service>
+    <con:property>
+      <con:name>projectID</con:name>
+      <con:value>52</con:value>
+    </con:property>
+    <con:property>
+      <con:name>RunID</con:name>
+      <con:value/>
+    </con:property>
     <con:databaseConnectionContainer/>
     <con:jmsConnectionContainer/>
   </con:environment>
@@ -75,6 +94,14 @@
     <con:service type="REST" name="All Webservices">
       <con:endpoint authProfile="UPG" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">https://mobtest.cmiccloudr12.com/cmictestupg</con:endpoint>
     </con:service>
+    <con:property>
+      <con:name>projectID</con:name>
+      <con:value>52</con:value>
+    </con:property>
+    <con:property>
+      <con:name>RunID</con:name>
+      <con:value/>
+    </con:property>
     <con:databaseConnectionContainer/>
     <con:jmsConnectionContainer/>
   </con:environment>
@@ -85,6 +112,14 @@
     <con:service type="REST" name="All Webservices">
       <con:endpoint authProfile="QADAILY" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">https://qamob.cmicpaas.com/cmicqadaily</con:endpoint>
     </con:service>
+    <con:property>
+      <con:name>projectID</con:name>
+      <con:value>52</con:value>
+    </con:property>
+    <con:property>
+      <con:name>RunID</con:name>
+      <con:value/>
+    </con:property>
     <con:databaseConnectionContainer/>
     <con:jmsConnectionContainer/>
   </con:environment>
@@ -95,6 +130,14 @@
     <con:service type="REST" name="All Webservices">
       <con:endpoint authProfile="QADAILY2" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">https://qamob.cmicpaas.com/cmicqadaily2</con:endpoint>
     </con:service>
+    <con:property>
+      <con:name>projectID</con:name>
+      <con:value>52</con:value>
+    </con:property>
+    <con:property>
+      <con:name>RunID</con:name>
+      <con:value/>
+    </con:property>
     <con:databaseConnectionContainer/>
     <con:jmsConnectionContainer/>
   </con:environment>
@@ -105,6 +148,29 @@
     <con:service type="REST" name="All Webservices">
       <con:endpoint authProfile="QALATEST" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">https://qalatestmob.cmicpaas.com/cmicqalatest</con:endpoint>
     </con:service>
+    <con:property>
+      <con:name>projectID</con:name>
+      <con:value>52</con:value>
+    </con:property>
+    <con:property>
+      <con:name>RunID</con:name>
+      <con:value>1996</con:value>
+    </con:property>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
+  <con:environment id="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6" name="TestRailEnvironment" index="5">
+    <con:service type="REST" name="ConstructPM Webservices">
+      <con:endpoint authProfile="TESTRAIL" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">https://cmic.testrail.io</con:endpoint>
+    </con:service>
+    <con:property>
+      <con:name>projectID</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>RunID</con:name>
+      <con:value/>
+    </con:property>
     <con:databaseConnectionContainer/>
     <con:jmsConnectionContainer/>
   </con:environment>
@@ -120,13 +186,13 @@
       <con:name>NOVATEST</con:name>
       <con:type>Basic</con:type>
       <con:username>R12CLOUD||CMICUSER</con:username>
-      <con:password>a3558-9653b-A12A6-D6%3D-32231-991D9-98b</con:password>
+      <con:password>a%5b%-616#1-F8b3#-A#2D9-6eebe-2b36A-593</con:password>
     </con:basicAuthEntry>
     <con:basicAuthEntry>
       <con:name>UPG</con:name>
       <con:type>Basic</con:type>
       <con:username>SOLUTIONS||CMICUSER</con:username>
-      <con:password>aAC#9-12863-F1A9b-6D1%F-5b#8A-5b9F3-#C2</con:password>
+      <con:password>a1#%5-9AD52-F29e9-%1969-#C213-#51b6-1#C</con:password>
     </con:basicAuthEntry>
     <con:basicAuthEntry>
       <con:name>QALATEST</con:name>
@@ -139,6 +205,13 @@
       <con:type>Basic</con:type>
       <con:username>raman2</con:username>
       <con:password>raman2</con:password>
+      <con:preemptive>true</con:preemptive>
+    </con:basicAuthEntry>
+    <con:basicAuthEntry>
+      <con:name>TESTRAIL</con:name>
+      <con:type>Basic</con:type>
+      <con:username>devik@nousinfo.com</con:username>
+      <con:password>CMiC_NousTestrail1896</con:password>
       <con:preemptive>true</con:preemptive>
     </con:basicAuthEntry>
   </con:authRepository>
@@ -158,6 +231,46 @@
     <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
       <con:authProfile>QALATEST</con:authProfile>
     </con:entry>
+    <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
   </con:environmentSpec>
-  <con:tags/>
+  <con:tags>
+    <con:tag>
+      <con:id>e82ab375-911f-4d0f-b76b-2c1095d3f890</con:id>
+      <con:name>Annotation</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>c4a9b3b0-fe4d-44b8-a1cd-e873e92e452a</con:id>
+      <con:name>FieldTeam</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>a530a111-d311-48ca-b64a-8c9abf59e784</con:id>
+      <con:name>SubContracts</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>51a705db-8658-4c1c-8906-9eabeb6e3447</con:id>
+      <con:name>RFI</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>5e3efa9c-facc-43a0-9270-a868cfbeec4e</con:id>
+      <con:name>PunchList</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>75c6c237-fc73-4932-9321-beb05919beb4</con:id>
+      <con:name>Journal</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>0e013ecf-5aab-421c-9072-93bb77eb0a22</con:id>
+      <con:name>BidItemsImport</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>0e89e3c8-dfa3-44dc-b39b-3d35ac598e1a</con:id>
+      <con:name>PCI</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>b3e6a5b2-7267-41a5-8147-51657c14a2c6</con:id>
+      <con:name>Contacts</con:name>
+    </con:tag>
+  </con:tags>
 </con:soapui-project>

@@ -23,5 +23,8 @@
     <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
+    <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
   </con:environmentSpec>
 </con:testSuite>

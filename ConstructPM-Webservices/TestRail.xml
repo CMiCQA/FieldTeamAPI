@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="TestRail" path="index.php?/api/v2/add_result_for_case/{RunID}/{TestCaseID}" id="bf63281f-09ac-4b5c-87a6-2826034a97f4">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="TestRail" path="/index.php?/api/v2/add_result_for_case/{RunID}/{TestCaseID}" id="bf63281f-09ac-4b5c-87a6-2826034a97f4">
   <con:settings id="3177be4f-9b24-458a-a69b-21c76d81bd2f">
     <con:setting id="bf63281f-09ac-4b5c-87a6-2826034a97f4fileName">TestRail</con:setting>
   </con:settings>
@@ -54,14 +54,22 @@
       <con:element xsi:nil="true"/>
       <con:description xsi:nil="true"/>
     </con:representation>
-    <con:request name="Request 1" id="c105f5b4-44e1-4290-a356-d6b710a7df0b" mediaType="application/json">
-      <con:settings/>
+    <con:request name="Request 1" id="c105f5b4-44e1-4290-a356-d6b710a7df0b" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>https://qamob.cmicpaas.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://cmic.testrail.io/index.php</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
-      <con:parameters/>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="TestCaseID" value="69813"/>
+        <con:entry key="RunID" value="1457"/>
+      </con:parameters>
       <con:environmentSpec>
         <con:entry environmentId="4a8025f4-94ea-4501-9fea-c97dcac8b6cf">
           <con:authProfile>Inherit From Parent</con:authProfile>
@@ -77,6 +85,9 @@
         </con:entry>
         <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
           <con:authProfile>QALATEST</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+          <con:authProfile>TESTRAIL</con:authProfile>
         </con:entry>
       </con:environmentSpec>
     </con:request>
@@ -96,6 +107,9 @@
       <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
         <con:authProfile>Inherit From Parent</con:authProfile>
       </con:entry>
+      <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
     </con:environmentSpec>
   </con:method>
   <con:environmentSpec>
@@ -112,6 +126,9 @@
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
     <con:entry environmentId="dcf09228-28f0-461d-97ba-ae52da190086">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="a4f87cd8-f67a-452d-bd63-2a15b6cdd2b6">
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
   </con:environmentSpec>

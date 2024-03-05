@@ -15,6 +15,9 @@
 				<Variable Name="Environment" Type="String" Local="False">
 					<DefValue StrValue="QALATEST" />
 				</Variable>
+				<Variable Name="browser" Type="String" Local="False">
+					<DefValue StrValue="chrome" />
+				</Variable>
 			</Items>
 		</data>
 	</variables>

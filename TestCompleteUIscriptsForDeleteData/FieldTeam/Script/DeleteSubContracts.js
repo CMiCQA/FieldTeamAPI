@@ -10,16 +10,15 @@ function DeleteSubContracts()
     StrEnv = Project.Variables.Environment[0].toUpperCase() + Project.Variables.Environment.slice(1).toLowerCase()
     ObjEnvironmentPanel.FindChildByXPath("//a[text()='"+StrEnv+"']").Click()
     Aliases.Browser.PgeCmicR12LaunchPage.BtnLaunchSoftware.Click()
-    Delay(3000, "Wait for page to load")
+    getPage().Wait()
 //------------------------------------------------------------------  
     CommonFunctions.Login(Project.Variables.Environment)
 //------------------------------------------------------------------ 
-  Delay(3000, "Wait for page to load")
+  WaitObjLoad(Aliases.Browser.PgeProjectManagement.frameTreeframe.LnkSubContract)
   if (Aliases.Browser.PgeProjectManagement.frameTreeframe.LnkSubContract.VisibleOnScreen == false){
       Aliases.Browser.PgeProjectManagement.frameTreeframe.LblBudgetAndCostManagement.Click()
       }
     Aliases.Browser.PgeProjectManagement.frameTreeframe.LnkSubContract.Click()
-    Delay(3000, "Wait for page to load")
 //-----------------------------------------------------------------
     var folderPath = aqFileSystem.ExcludeTrailingBackSlash(ProjectSuite.Path)
     folderPath =  aqFileSystem.GetFileFolder(folderPath)
@@ -28,21 +27,25 @@ function DeleteSubContracts()
     var fileContent = file.ReadLine();
     ContractCode = aqString.Unquote(fileContent)
 //-----------------------------------------------------------------
-    Aliases.Browser.PgeProjectManagement.frameContentframe.TxtBoxSeachSC.SetText(ContractCode)
+    objTextBoxSearchSC = Aliases.Browser.PgeProjectManagement.frameContentframe.TxtBoxSeachSC
+    WaitObjLoad(objTextBoxSearchSC)
+    objTextBoxSearchSC.SetText(ContractCode)
     Sys.Keys("[Enter]")
-    Delay(3000, "Wait for page to load")
+    Delay(3000)
     objTblSearchResultsSC = Aliases.Browser.PgeProjectManagement.frameContentframe.TblSearchResultsSC
     objContractCode = objTblSearchResultsSC.FindChildByXPath("//td[contains(text(),'"+ContractCode+"')]")
+    WaitObjLoad(objContractCode)
     objContractCode.Click()
 //-----------------------------------------------------------------
     Aliases.Browser.PgeProjectManagement.frameHeaderframe.BtnDelete.Click()
     Aliases.Browser.PgeProjectManagement.Confirm.Button("OK").Click()
 //-----------------------------------------------------------------
+    Log.Message("Deleted the record" + ContractCode)
     CommonFunctions.CloseBrowser()
   }
 //-----------------------------------------------------------------
   catch(err)
   {
-    Log.Warning("Exception: Error occured while deleting SubContract "+err.description);
+    Log.Error("Exception: Error occured while deleting SubContract "+err.description);
   }
 }
