@@ -231,7 +231,7 @@
     <con:config xsi:type="con:DataSinkStep">
       <con:dataSink type="File">
         <con:configuration>
-          <fileName>FieldTeamAPI/TestData/DataTransfer/BidItemsDataTransfer.txt</fileName>
+          <fileName>${projectDir}/FieldTeamAPI/TestData/DataTransfer/BidItemsDataTransfer.txt</fileName>
           <separator>,</separator>
           <escape>"</escape>
           <quote>true</quote>
