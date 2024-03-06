@@ -632,9 +632,9 @@ import java.net.URL
 // Function to post test result to TestRail
 def postTestResultToTestRail() {
 
-	def testRailUrl = context.expand( '${#Global#TestRailUrl}' )
-	def testRailUsername = context.expand( '${#Global#TestRailUserName}' )
-	def testRailApiKey = context.expand( '${#Global#TestRailAPIkey}' )
+	def testRailUrl = context.expand( '${#Project#TestRailUrl}' )
+	def testRailUsername = context.expand( '${#Project#TestRailUserName}' )
+	def testRailApiKey = context.expand( '${#Project#TestRailAPIkey}' )
 	
 	// Define your TestRail project ID and test run ID
 	def projectId = context.expand( '${#Project#projectID}' )
@@ -705,6 +705,18 @@ postTestResultToTestRail()</con:tearDownScript>
     <con:property userSpecific="true">
       <con:name>TestCaseID</con:name>
       <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>TestRailUrl</con:name>
+      <con:value>https://cmic.testrail.io/index.php?/api/v2</con:value>
+    </con:property>
+    <con:property>
+      <con:name>TestRailUserName</con:name>
+      <con:value>devik@nousinfo.com</con:value>
+    </con:property>
+    <con:property>
+      <con:name>TestRailAPIkey</con:name>
+      <con:value>zBoSn2E6wxdiR1Dog85E-8bSt8i9AEb9Y.94YFGlx</con:value>
     </con:property>
   </con:properties>
   <con:reportParameters/>
