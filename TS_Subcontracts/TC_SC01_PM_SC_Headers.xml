@@ -702,9 +702,9 @@ postTestResultToTestRail()</con:tearDownScript>
       <con:name>CurrentDate</con:name>
       <con:value/>
     </con:property>
-    <con:property userSpecific="true">
+    <con:property>
       <con:name>TestCaseID</con:name>
-      <con:value/>
+      <con:value>104539</con:value>
     </con:property>
   </con:properties>
   <con:reportParameters/>

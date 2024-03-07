@@ -494,6 +494,18 @@ postTestResultToTestRail()</con:tearDownScript>
       <con:name>TestCaseID</con:name>
       <con:value>104541</con:value>
     </con:property>
+    <con:property>
+      <con:name>TestRailUrl</con:name>
+      <con:value>https://cmic.testrail.io/index.php?/api/v2</con:value>
+    </con:property>
+    <con:property>
+      <con:name>TestRailUserName</con:name>
+      <con:value>devik@nousinfo.com</con:value>
+    </con:property>
+    <con:property>
+      <con:name>TestRailAPIkey</con:name>
+      <con:value>zBoSn2E6wxdiR1Dog85E-8bSt8i9AEb9Y.94YFGlx</con:value>
+    </con:property>
   </con:properties>
   <con:reportParameters/>
   <con:environmentSpec>
