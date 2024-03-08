@@ -22,7 +22,7 @@
       <warningAsError>false</warningAsError>
       <test>PMJSP_DeleteBidItem</test>
       <otherTest/>
-      <otherArgs>/run /e</otherArgs>
+      <otherArgs/>
     </con:config>
   </con:testStep>
   <con:properties/>

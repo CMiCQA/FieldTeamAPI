@@ -55,7 +55,7 @@
       <warningAsError>false</warningAsError>
       <test/>
       <otherTest/>
-      <otherArgs>/run /e</otherArgs>
+      <otherArgs/>
     </con:config>
   </con:testStep>
   <con:testStep type="delay" name="Delay" id="7786c34d-35ce-4aa8-9614-327670a2d63d">
