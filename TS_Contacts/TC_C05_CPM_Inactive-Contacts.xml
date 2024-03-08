@@ -108,9 +108,9 @@ import java.net.URL
 // Function to post test result to TestRail
 def postTestResultToTestRail() {
 
-    def testRailUrl = context.expand('${#Global#TestRailUrl}')
-    def testRailUsername = context.expand('${#Global#TestRailUserName}')
-    def testRailApiKey = context.expand('${#Global#TestRailAPIkey}')
+    def testRailUrl = context.expand('${#Project#TestRailUrl}')
+    def testRailUsername = context.expand('${#Project#TestRailUserName}')
+    def testRailApiKey = context.expand('${#Project#TestRailAPIkey}')
 
     def projectId = context.expand('${#Project#projectID}')
     def testRunId = context.expand('${#Project#RunID}')
