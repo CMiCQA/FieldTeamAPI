@@ -26,7 +26,7 @@
   <con:entry key="Test Suite Tags" value=""/>
   <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
   <con:entry key="System Properties" value=""/>
-  <con:entry key="Test Suite" value="&lt;all>"/>
+  <con:entry key="Test Suite" value="PreRequisite"/>
   <con:entry key="Run in-process" value="false"/>
   <con:entry key="Password" value=""/>
   <con:entry key="Print Report" value="true"/>
@@ -35,12 +35,12 @@
   <con:entry key="Export JUnit Results with test properties" value="false"/>
   <con:entry key="Global Properties" value=""/>
   <con:entry key="Project Properties" value=""/>
-  <con:entry key="Test Case" value="&lt;all>"/>
+  <con:entry key="Test Case" value="SelectProjectFromUI"/>
   <con:entry key="Slack Access Token" value=""/>
   <con:entry key="Project Password" value=""/>
   <con:entry key="Username" value=""/>
   <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-3.50.0\bin"/>
-  <con:entry key="Environment" value="No Environment"/>
+  <con:entry key="Environment" value="QALATEST"/>
   <con:entry key="Coverage Report" value="false"/>
   <con:entry key="Enable UI" value="false"/>
   <con:entry key="Root Folder" value="${WORKSPACE}"/>

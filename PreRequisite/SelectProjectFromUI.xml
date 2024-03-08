@@ -42,7 +42,7 @@
       <timeout/>
       <executionResult>0</executionResult>
       <resultDescription/>
-      <testRunner>TestExecute 15</testRunner>
+      <testRunner>TestComplete 15</testRunner>
       <runMode>UNIT</runMode>
       <exportTestLog/>
       <silentModeLog/>
