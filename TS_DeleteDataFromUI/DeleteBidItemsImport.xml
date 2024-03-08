@@ -9,7 +9,7 @@
       <timeout>600</timeout>
       <executionResult>0</executionResult>
       <resultDescription/>
-      <testRunner>TestComplete 15</testRunner>
+      <testRunner>TestExecute 15</testRunner>
       <runMode>UNIT</runMode>
       <exportTestLog/>
       <silentModeLog>C:\Users\Administrator\Documents\CMIC_TESTCOMPLETE_PROJECT\CMiC_FieldTeam\CMiC_FieldTeam.pjs</silentModeLog>
@@ -22,7 +22,7 @@
       <warningAsError>false</warningAsError>
       <test>PMJSP_DeleteBidItem</test>
       <otherTest/>
-      <otherArgs/>
+      <otherArgs>/run /e</otherArgs>
     </con:config>
   </con:testStep>
   <con:properties/>

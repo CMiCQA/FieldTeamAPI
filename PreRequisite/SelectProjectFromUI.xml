@@ -42,7 +42,7 @@
       <timeout/>
       <executionResult>0</executionResult>
       <resultDescription/>
-      <testRunner>TestComplete 15</testRunner>
+      <testRunner>TestExecute 15</testRunner>
       <runMode>UNIT</runMode>
       <exportTestLog/>
       <silentModeLog/>
@@ -55,7 +55,7 @@
       <warningAsError>false</warningAsError>
       <test/>
       <otherTest/>
-      <otherArgs/>
+      <otherArgs>/run /e</otherArgs>
     </con:config>
   </con:testStep>
   <con:testStep type="delay" name="Delay" id="7786c34d-35ce-4aa8-9614-327670a2d63d">
