@@ -384,12 +384,6 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="groovy" name="PostResultsToTestRail" id="d8d1d939-ebdc-4e39-85df-fb4904b8ff26" disabled="true">
-    <con:settings/>
-    <con:config>
-      <script/>
-    </con:config>
-  </con:testStep>
   <con:tearDownScript>import groovy.json.JsonOutput
 import java.net.HttpURLConnection
 import java.net.URL
@@ -397,45 +391,35 @@ import java.net.URL
 // Function to post test result to TestRail
 def postTestResultToTestRail() {
 
-	def testRailUrl = context.expand( '${#Global#TestRailUrl}' )
-	def testRailUsername = context.expand( '${#Global#TestRailUserName}' )
-	def testRailApiKey = context.expand( '${#Global#TestRailAPIkey}' )
-	
-	// Define your TestRail project ID and test run ID
-	def projectId = context.expand( '${#Project#projectID}' )
-	def testRunId = context.expand( '${#Project#RunID}' )
-	
-	// Define the test case ID for the test you want to post results for
-	def testCaseId = context.expand( '${#TestCase#TestCaseID}' )  
-	
-	// loop through previous steps to get results to see if all passed
-	def testCaseName = testRunner.testCase.name
-	def failedTestStep = ""
-	def testMsg = ""
-	def result = ""
-	def statusId = ""
-	def comment = ""
-	
-	for(r in testRunner.results) {
-		if(r.getStatus().toString() != "PASS") {
-			result = context.expand('${' + r.testStep.name + '#Response}')
-		 	failedTestStep =  r.testStep.name
-			break
-		}
-	}
-	// set test status and comment based on previous step results
-	if(failedTestStep == "") {
-		testMsg = testCaseName + " has passed successfully"
-		statusId = 1
-		comment = testMsg 
-	} else {
-		testMsg = testCaseName + " has failed on test step: \'" + failedTestStep + "\'"
-		if(result != "") {
-			testMsg = testMsg + " with reason - " + result
-		}
-		statusId = 5
-		comment = testMsg 
-	}	
+    def testRailUrl = context.expand('${#Global#TestRailUrl}')
+    def testRailUsername = context.expand('${#Global#TestRailUserName}')
+    def testRailApiKey = context.expand('${#Global#TestRailAPIkey}')
+
+    def projectId = context.expand('${#Project#projectID}')
+    def testRunId = context.expand('${#Project#RunID}')
+
+    def testCaseId = context.expand('${#TestCase#TestCaseID}')
+    def testCaseName = testRunner.testCase.name
+
+    def failedTestSteps = []
+    def result = ""
+    def statusId = 1
+    def comment = ""
+
+    for (r in testRunner.results) {
+        if (r.getStatus().toString() != "PASS") {
+            def stepResult = context.expand('${' + r.testStep.name + '#Response}')
+            failedTestSteps.add(r.testStep.name + (stepResult ? (" - " + stepResult) : ""))
+        }
+    }
+
+    if (!failedTestSteps) {
+        comment = "${testCaseName} has passed successfully"
+    } else {
+        statusId = 5
+        comment = "${testCaseName} has failed on test steps:\n${failedTestSteps.join('\n')}"
+    }
+
     def postUrl = "${testRailUrl}/add_result_for_case/${testRunId}/${testCaseId}"
 
     def connection = new URL(postUrl).openConnection() as HttpURLConnection
@@ -445,8 +429,8 @@ def postTestResultToTestRail() {
     connection.setRequestProperty("Authorization", "Basic " + "${testRailUsername}:${testRailApiKey}".bytes.encodeBase64().toString())
 
     def requestBody = [
-        status_id: statusId,
-        comment: comment
+            status_id: statusId,
+            comment: comment
     ]
 
     def outputStream = connection.outputStream
@@ -460,7 +444,6 @@ def postTestResultToTestRail() {
     log.info("Response message: ${responseMessage}")
 }
 
-// Post test result to TestRail
 postTestResultToTestRail()</con:tearDownScript>
   <con:properties>
     <con:property>

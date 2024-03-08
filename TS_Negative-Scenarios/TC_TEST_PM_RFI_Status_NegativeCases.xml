@@ -140,12 +140,6 @@
       <discardResults>true</discardResults>
     </con:config>
   </con:testStep>
-  <con:testStep type="groovy" name="PostResultsToTestRail" id="3828fe3e-a2d3-4779-8983-3559be7c3fa7" disabled="true">
-    <con:settings/>
-    <con:config>
-      <script/>
-    </con:config>
-  </con:testStep>
   <con:properties/>
   <con:reportParameters/>
   <con:environmentSpec>
