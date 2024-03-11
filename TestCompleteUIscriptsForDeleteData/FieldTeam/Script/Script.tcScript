@@ -4,7 +4,7 @@
 		<child name="CommonFunctions" key="{E48CC64F-24FC-4D20-B9BC-E6DE08C9208F}" path="CommonFunctions.js" />
 		<child name="DeletBidItemsImport" key="{29A31606-0511-4C7F-B752-08BBD0FA3A50}" path="DeletBidItemsImport.js" />
 		<child name="DeleteSubContracts" key="{918F6666-8903-4D84-922E-630DAB08659B}" path="DeleteSubContracts.js" />
-		<child name="ChooseProject" key="{2E8FE157-CA31-4A8B-8BBF-1326F28B5246}" path="ChooseProject.js" />
+		<child name="SelectProjectFromUI" key="{2E8FE157-CA31-4A8B-8BBF-1326F28B5246}" path="SelectProjectFromUI.js" />
 		<child name="DeletePCI" key="{817829E6-4ABC-4100-BD19-9683D613DE63}" path="DeletePCI.js" />
 	</children>
 </Root>

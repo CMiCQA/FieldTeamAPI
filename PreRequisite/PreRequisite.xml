@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="0227e8f0-a4a1-44f5-b224-c6f16eab798d" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="PreRequisite" searchProperties="true" timeout="0">
+  <con:settings id="f2503636-97f4-4882-8a56-9223bf08e83a">
+    <con:setting id="0227e8f0-a4a1-44f5-b224-c6f16eab798dfileName">PreRequisite</con:setting>
+  </con:settings>
+  <con:testStep type="groovy" name="CreateTestRunInTestRail" id="993cc206-4001-45bf-8871-7fa16b1f1164">
+    <con:settings/>
+    <con:config>
+      <script>import groovy.json.JsonOutput
+import java.net.HttpURLConnection
+import java.net.URL
+import java.text.SimpleDateFormat
+import java.util.Date
+import groovy.json.JsonSlurper
+
+// Function to create a new test run in TestRail project and fetch the run id to store it in the project property.
+def CreateTestRunInTestRail() {
+    def testRailUrl = context.expand('${#Global#TestRailUrl}')
+    def testRailUsername = context.expand('${#Global#TestRailUserName}')
+    def testRailApiKey = context.expand('${#Global#TestRailAPIkey}')
+    
+    def projectId = context.expand( '${#Project#projectID}' ) 
+    
+	def timestamp = new Date().time
+	def formattedTimestamp = new SimpleDateFormat("yyyy/MMMM/dd_HH:mm").format(new Date(timestamp))
+	def runName ="TestRun_${formattedTimestamp}"
+     
+    def postUrl = "${testRailUrl}/add_run/${projectId}"
+  
+    def connection = new URL(postUrl).openConnection() as HttpURLConnection
+    connection.requestMethod = 'POST'
+    connection.doOutput = true
+    connection.setRequestProperty("Content-Type", "application/json")
+    connection.setRequestProperty("Authorization", "Basic " + "${testRailUsername}:${testRailApiKey}".bytes.encodeBase64().toString())
+    
+    def requestBody = [
+        name: runName,
+        include_all: true 
+    ]
+    
+    def outputStream = connection.outputStream
+    outputStream.write(JsonOutput.toJson(requestBody).getBytes())
+    outputStream.flush()
+    
+    def responseCode = connection.responseCode
+    def responseMessage = connection.responseMessage
+    
+    log.info( "Response code: ${responseCode}")
+    log.info("Response message: ${responseMessage}")
+
+//get run id of the newly created run and store it in a variable
+def runsEndpoint = "${testRailUrl}/get_runs/${projectId}"
+
+def url = new URL(runsEndpoint)
+connection = url.openConnection() as HttpURLConnection
+connection.requestMethod = 'GET'
+connection.setRequestProperty("Authorization", "Basic " + "${testRailUsername}:${testRailApiKey}".bytes.encodeBase64().toString())
+
+responseCode = connection.responseCode
+def responseData = ""
+if (responseCode == HttpURLConnection.HTTP_OK) {
+    responseData = connection.inputStream.text
+} else {
+    responseData = connection.errorStream.text
+}
+connection.disconnect()
+
+def runs = new JsonSlurper().parseText(responseData)
+log.info("$runs")
+def targetRunId = null
+runs.runs.each { run ->
+    if (run.name == runName) {
+        targetRunId = run.id
+        return 
+    }
+}
+if (targetRunId) {
+    log.info "The ID of the test run '${runName}' is: ${targetRunId}"
+    def project = testRunner.testCase.testSuite.project
+    project.setPropertyValue("RunID", "${targetRunId}")
+} else {
+    log.error "Test run '${runName}' not found."
+}
+}
+CreateTestRunInTestRail()</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="properties" name="Properties" id="b680c358-30c4-4527-ba91-2eb06caefaeb">
+    <con:settings/>
+    <con:config xsi:type="con:PropertiesStep" saveFirst="true">
+      <con:properties>
+        <con:property>
+          <con:name>ProjectName</con:name>
+          <con:value>RJPROJ01</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="Data Sink" id="33a7c3b7-e0e1-46fb-b5b7-74576c2253d7">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep">
+      <con:dataSink type="File">
+        <con:configuration>
+          <fileName>${projectDir}/FieldTeamAPI/TestData/ProjectDetails.txt</fileName>
+          <separator>,</separator>
+          <escape>"</escape>
+          <quote>true</quote>
+          <trim>true</trim>
+          <append>false</append>
+          <encoding>Cp1252</encoding>
+        </con:configuration>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>ProjectName</con:name>
+          <con:value>${Properties#ProjectName}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="tcintegrationteststep" name="SelectProjectFromUI" id="c11dce29-7488-4992-a0d6-6a6a9b5ac0aa">
+    <con:settings/>
+    <con:config>
+      <timeout/>
+      <executionResult>0</executionResult>
+      <resultDescription/>
+      <testRunner>TestComplete 15</testRunner>
+      <runMode>UNIT</runMode>
+      <exportTestLog/>
+      <silentModeLog/>
+      <projectSuiteFile>${projectDir}/FieldTeamAPI/TestCompleteUIscriptsForDeleteData/CMiC_API_Testing.pjs</projectSuiteFile>
+      <projectName>FieldTeam</projectName>
+      <scriptUnit>SelectProjectFromUI</scriptUnit>
+      <scriptRoutine>SelectProjectFromUI</scriptRoutine>
+      <silentMode>false</silentMode>
+      <showTestLog>false</showTestLog>
+      <warningAsError>false</warningAsError>
+      <test/>
+      <otherTest/>
+      <otherArgs/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="delay" name="Delay" id="7786c34d-35ce-4aa8-9614-327670a2d63d">
+    <con:settings/>
+    <con:config>
+      <delay>60000</delay>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:tagId>c4a9b3b0-fe4d-44b8-a1cd-e873e92e452a</con:tagId>
+</con:testCase>
