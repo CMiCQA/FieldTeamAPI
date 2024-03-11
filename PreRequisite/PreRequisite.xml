@@ -15,9 +15,9 @@ import groovy.json.JsonSlurper
 
 // Function to create a new test run in TestRail project and fetch the run id to store it in the project property.
 def CreateTestRunInTestRail() {
-    def testRailUrl = context.expand('${#Global#TestRailUrl}')
-    def testRailUsername = context.expand('${#Global#TestRailUserName}')
-    def testRailApiKey = context.expand('${#Global#TestRailAPIkey}')
+    def testRailUrl = context.expand('${#Project#TestRailUrl}')
+    def testRailUsername = context.expand('${#Project#TestRailUserName}')
+    def testRailApiKey = context.expand('${#Project#TestRailAPIkey}')
     
     def projectId = context.expand( '${#Project#projectID}' ) 
     
