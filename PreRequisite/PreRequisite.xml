@@ -124,7 +124,7 @@ CreateTestRunInTestRail()</script>
       <timeout/>
       <executionResult>0</executionResult>
       <resultDescription/>
-      <testRunner>TestComplete 15</testRunner>
+      <testRunner>TestExecute 15</testRunner>
       <runMode>UNIT</runMode>
       <exportTestLog/>
       <silentModeLog/>
