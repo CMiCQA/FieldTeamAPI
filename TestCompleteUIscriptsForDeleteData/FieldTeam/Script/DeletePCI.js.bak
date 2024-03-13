@@ -1,5 +1,6 @@
 ﻿//USEUNIT CommonFunctions
 
+//@PCI @FieldTeam
 function DeletePCI()
 {
   try{
@@ -36,7 +37,7 @@ function DeletePCI()
     Aliases.Browser.PgeProjectManagement.frameHeaderframe.BtnDeleteAll.Click()
     Aliases.Browser.PgeProjectManagement.frameContentframe.BtnYes.Click()
 //-----------------------------------------------------------------
-    Log.Message("Deleted the record" + ItemName)
+    Log.Message("Deleted the record" + PCICode)
     CommonFunctions.CloseBrowser()
   }
 //-----------------------------------------------------------------

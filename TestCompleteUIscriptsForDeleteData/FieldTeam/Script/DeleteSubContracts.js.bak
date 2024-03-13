@@ -1,5 +1,6 @@
 ﻿//USEUNIT CommonFunctions
 
+//@SubContracts @FieldTeam
 function DeleteSubContracts()
 {
   try{

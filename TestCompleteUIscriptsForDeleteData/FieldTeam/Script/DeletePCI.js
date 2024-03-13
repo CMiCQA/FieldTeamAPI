@@ -1,5 +1,6 @@
 ﻿//USEUNIT CommonFunctions
 
+//@PCI @FieldTeam
 function DeletePCI()
 {
   try{
@@ -21,7 +22,7 @@ function DeletePCI()
 //-----------------------------------------------------------------
     var folderPath = aqFileSystem.ExcludeTrailingBackSlash(ProjectSuite.Path)
     folderPath =  aqFileSystem.GetFileFolder(folderPath)
-    var filePath = folderPath  + "\\TestData\\DataTransfer\\PCIDataTransfer.txt";
+    var filePath = folderPath  + "TestData\\DataTransfer\\PCIDataTransfer.txt";
     var file = Sys.OleObject("Scripting.FileSystemObject").OpenTextFile(filePath, 1); // 1 for reading
     var fileContent = file.ReadLine();
     PCICode = aqString.Unquote(fileContent)

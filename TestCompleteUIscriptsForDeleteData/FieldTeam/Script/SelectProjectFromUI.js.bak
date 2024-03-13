@@ -1,6 +1,6 @@
 ﻿//USEUNIT CommonFunctions
 
-function ChooseProject()
+function SelectProjectFromUI()
 {
   try{
     CommonFunctions.LaunchURL(Project.Variables.Environment)

@@ -1,5 +1,6 @@
 ﻿//USEUNIT CommonFunctions
 
+//@BidItemsImport @FieldTeam
 function DeleteBidItemsImport()
 {
   try{
@@ -24,7 +25,7 @@ function DeleteBidItemsImport()
 //-----------------------------------------------------------------
     var folderPath = aqFileSystem.ExcludeTrailingBackSlash(ProjectSuite.Path)
     folderPath =  aqFileSystem.GetFileFolder(folderPath)
-    var filePath = folderPath + "\\TestData\\DataTransfer\\BidItemsDataTransfer.txt";
+    var filePath = folderPath + "TestData\\DataTransfer\\BidItemsDataTransfer.txt";
     var file = Sys.OleObject("Scripting.FileSystemObject").OpenTextFile(filePath, 1); // 1 for reading
     var fileContent = file.ReadLine();
     ItemName = aqString.Unquote(fileContent)

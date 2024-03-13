@@ -1,5 +1,6 @@
 ﻿//USEUNIT CommonFunctions
 
+//@BidItemsImport @FieldTeam
 function DeleteBidItemsImport()
 {
   try{
@@ -20,7 +21,7 @@ function DeleteBidItemsImport()
     Aliases.Browser.PgeProjectManagement.frameTreeframe.LblBidItems.Click()
     Aliases.Browser.PgeProjectManagement.frameHeaderframe.LnkNavArrow.Click()
     Aliases.Browser.PgeProjectManagement.frameHeaderframe.BtnShowimporteddata.Click()
-    Aliases.Browser.PgeShowImportedData.ChkBoxShowCurrentProj.Click()
+//    Aliases.Browser.PgeShowImportedData.ChkBoxShowCurrentProj.Click()
 //-----------------------------------------------------------------
     var folderPath = aqFileSystem.ExcludeTrailingBackSlash(ProjectSuite.Path)
     folderPath =  aqFileSystem.GetFileFolder(folderPath)

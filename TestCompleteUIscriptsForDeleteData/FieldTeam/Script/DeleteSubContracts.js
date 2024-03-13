@@ -1,5 +1,6 @@
 ﻿//USEUNIT CommonFunctions
 
+//@SubContracts @FieldTeam
 function DeleteSubContracts()
 {
   try{
@@ -22,7 +23,7 @@ function DeleteSubContracts()
 //-----------------------------------------------------------------
     var folderPath = aqFileSystem.ExcludeTrailingBackSlash(ProjectSuite.Path)
     folderPath =  aqFileSystem.GetFileFolder(folderPath)
-    var filePath = folderPath + "\\TestData\\DataTransfer\\SubContractsDataTransfer.txt";
+    var filePath = folderPath + "TestData\\DataTransfer\\SubContractsDataTransfer.txt";
     var file = Sys.OleObject("Scripting.FileSystemObject").OpenTextFile(filePath, 1); // 1 for reading
     var fileContent = file.ReadLine();
     ContractCode = aqString.Unquote(fileContent)
